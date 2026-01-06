@@ -1,0 +1,208 @@
+[
+  {
+    "slug": "shirt-white-men",
+    "name": "White Shirt",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-shirt-white-1.png",
+    "images": [
+      "images/dummy-shirt-white-1.png",
+      "images/dummy-shirt-white-2.png"
+    ]
+  },
+  {
+    "slug": "shirt-cotton-men",
+    "name": "Cotton Shirt",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-shirt-cotton-men-1.png",
+    "images": [
+      "images/dummy-shirt-cotton-men-1.png",
+      "images/dummy-shirt-cotton-men-2.png"
+    ]
+  },
+  {
+    "slug": "shirt-cotton-kids",
+    "name": "Cotton Shirt (Kids)",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-shirt-cotton-kids-1.png",
+    "images": [
+      "images/dummy-shirt-cotton-kids-1.png",
+      "images/dummy-shirt-cotton-kids-2.png"
+    ]
+  },
+  {
+    "slug": "shirt-polisher-men",
+    "name": "Polisher Shirt",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-shirt-polisher-men-1.png",
+    "images": [
+      "images/dummy-shirt-polisher-men-1.png",
+      "images/dummy-shirt-polisher-men-2.png"
+    ]
+  },
+  {
+    "slug": "shirt-polisher-kids",
+    "name": "Polisher Shirt (Kids)",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-shirt-polisher-kids-1.png",
+    "images": [
+      "images/dummy-shirt-polisher-kids-1.png",
+      "images/dummy-shirt-polisher-kids-2.png"
+    ]
+  },
+  {
+    "slug": "shirt-piece-fabric",
+    "name": "Shirt Piece",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-shirt-piece-1.png",
+    "images": [
+      "images/dummy-shirt-piece-1.png",
+      "images/dummy-shirt-piece-2.png"
+    ]
+  },
+
+  {
+    "slug": "mundu-line",
+    "name": "Line Mundu",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-mundu-line-1.png",
+    "images": [
+      "images/dummy-mundu-line-1.png",
+      "images/dummy-mundu-line-2.png"
+    ]
+  },
+  {
+    "slug": "mundu-without-line",
+    "name": "Without Line Mundu",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-mundu-plain-1.png",
+    "images": [
+      "images/dummy-mundu-plain-1.png",
+      "images/dummy-mundu-plain-2.png"
+    ]
+  },
+  {
+    "slug": "mundu-madeena",
+    "name": "Madeena Mundu",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-mundu-madeena-1.png",
+    "images": [
+      "images/dummy-mundu-madeena-1.png",
+      "images/dummy-mundu-madeena-2.png"
+    ]
+  },
+  {
+    "slug": "mundu-lunki",
+    "name": "Lunki",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-mundu-lunki-1.png",
+    "images": [
+      "images/dummy-mundu-lunki-1.png",
+      "images/dummy-mundu-lunki-2.png"
+    ]
+  },
+  {
+    "slug": "mundu-kayli",
+    "name": "Kayli",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-mundu-kayli-1.png",
+    "images": [
+      "images/dummy-mundu-kayli-1.png",
+      "images/dummy-mundu-kayli-2.png"
+    ]
+  },
+  {
+    "slug": "mundu-kayli-check",
+    "name": "Kayli Check",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-mundu-kayli-1.png",
+    "images": [
+      "images/dummy-mundu-kayli-1.png",
+      "images/dummy-mundu-kayli-2.png"
+    ]
+  },
+
+  {
+    "slug": "oil-shall-color",
+    "name": "Shall Color Oil",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-oil-shall-1.png",
+    "images": [
+      "images/dummy-oil-shall-1.png",
+      "images/dummy-oil-shall-2.png"
+    ]
+  },
+  {
+    "slug": "oil-without-color",
+    "name": "Without Color Oil",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-oil-plain-1.png",
+    "images": [
+      "images/dummy-oil-plain-1.png",
+      "images/dummy-oil-plain-2.png"
+    ]
+  },
+  {
+    "slug": "oil-kefiya",
+    "name": "Kefiya Oil",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-oil-kefiya-1.png",
+    "images": [
+      "images/dummy-oil-kefiya-1.png",
+      "images/dummy-oil-kefiya-2.png"
+    ]
+  },
+  {
+    "slug": "oil-noorani",
+    "name": "Noorani Oil",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-oil-noorani-1.png",
+    "images": [
+      "images/dummy-oil-noorani-1.png",
+      "images/dummy-oil-noorani-2.png"
+    ]
+  },
+  {
+    "slug": "oil-ready-made",
+    "name": "Ready Made Oil",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-oil-ready-1.png",
+    "images": [
+      "images/dummy-oil-ready-1.png",
+      "images/dummy-oil-ready-2.png"
+    ]
+  }
+]

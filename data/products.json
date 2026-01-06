@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "cherry-hijab",
+    "name": "Cherry Hijab",
+    "category": "Hijabs",
+    "price": "$99.00",
+    "description": "Explore elegant hijabs crafted for comfort and elegance.",
+    "images": [
+      "images/hijab.png",
+      "images/nighty.png",
+      "images/cherry-3.avif"
+    ]
+  },
+  {
+    "id": "rose-hijab",
+    "name": "Rose Hijab",
+    "category": "Hijabs",
+    "price": "$89.00",
+    "description": "Soft and breathable rose hijab.",
+    "images": [
+      "images/rose-1.png",
+      "images/rose-2.avif"
+    ]
+  },
+  {
+    "id": "cameos-classic-white",
+    "name": "Classic White Cameos",
+    "category": "mens_wear",
+    "sub_category": "cameos",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mens-1.png",
+      "images/dummy-mens-2.png"
+    ]
+  },
+  {
+    "id": "cameos-embroidered",
+    "name": "Embroidered Cameos",
+    "category": "mens_wear",
+    "sub_category": "cameos",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mens-3.png",
+      "images/dummy-mens-4.png"
+    ]
+  },
+  {
+    "id": "kanthoora-premium-white",
+    "name": "Premium White Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mens-5.png",
+      "images/dummy-mens-6.png"
+    ]
+  },
+  {
+    "id": "kanthoora-modern-fit",
+    "name": "Modern Fit Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mens-7.png",
+      "images/dummy-mens-8.png"
+    ]
+  },
+  {
+    "id": "kanthoora-emirati-classic",
+    "name": "Emirati Classic Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "style": "emirati",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-kanthoora-1.png",
+      "images/dummy-kanthoora-2.png"
+    ]
+  },
+  {
+    "id": "kanthoora-emirati-premium",
+    "name": "Emirati Premium Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "style": "emirati",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-kanthoora-3.png",
+      "images/dummy-kanthoora-4.png"
+    ]
+  },
+  {
+    "id": "kanthoora-moroccan-traditional",
+    "name": "Moroccan Traditional Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "style": "moroccan",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-kanthoora-5.png",
+      "images/dummy-kanthoora-6.png"
+    ]
+  },
+  {
+    "id": "kanthoora-moroccan-embroidered",
+    "name": "Moroccan Embroidered Kanthoora",
+    "category": "mens_wear",
+    "sub_category": "kanthoora",
+    "style": "moroccan",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-kanthoora-7.png",
+      "images/dummy-kanthoora-8.png"
+    ]
+  },
+  {
+    "id": "jubba-cotton-classic",
+    "name": "Cotton Jubba",
+    "category": "mens_wear",
+    "sub_category": "jubba",
+    "type": "cotton",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-jubba-cotton-1.png",
+      "images/dummy-jubba-cotton-2.png"
+    ]
+  },
+  {
+    "id": "jubba-cotton-premium",
+    "name": "Premium Cotton Jubba",
+    "category": "mens_wear",
+    "sub_category": "jubba",
+    "type": "cotton",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-jubba-cotton-3.png",
+      "images/dummy-jubba-cotton-4.png"
+    ]
+  },
+  {
+    "id": "jubba-set-classic",
+    "name": "Jubba Set",
+    "category": "mens_wear",
+    "sub_category": "jubba",
+    "type": "set",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-jubba-set-1.png",
+      "images/dummy-jubba-set-2.png"
+    ]
+  },
+  {
+    "id": "jubba-pant-matching",
+    "name": "Jubba Pant",
+    "category": "mens_wear",
+    "sub_category": "jubba",
+    "type": "pant",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-jubba-pant-1.png",
+      "images/dummy-jubba-pant-2.png"
+    ]
+  },
+  {
+    "id": "walalaleen-traditional",
+    "name": "Walalaleen Jubba",
+    "category": "mens_wear",
+    "sub_category": "jubba",
+    "type": "walalaleen",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-walalaleen-1.png",
+      "images/dummy-walalaleen-2.png"
+    ]
+  },
+  {
+    "id": "shirt-white-men",
+    "name": "White Shirt",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "white",
+    "gender": "men",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-white-1.png",
+      "images/dummy-shirt-white-2.png"
+    ]
+  },
+  {
+    "id": "shirt-cotton-men",
+    "name": "Cotton Shirt",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "cotton",
+    "gender": "men",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-cotton-men-1.png",
+      "images/dummy-shirt-cotton-men-2.png"
+    ]
+  },
+  {
+    "id": "shirt-cotton-kids",
+    "name": "Cotton Shirt",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "cotton",
+    "gender": "kids",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-cotton-kids-1.png",
+      "images/dummy-shirt-cotton-kids-2.png"
+    ]
+  },
+  {
+    "id": "shirt-polisher-men",
+    "name": "Polisher Shirt",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "polisher",
+    "gender": "men",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-polisher-men-1.png",
+      "images/dummy-shirt-polisher-men-2.png"
+    ]
+  },
+  {
+    "id": "shirt-polisher-kids",
+    "name": "Polisher Shirt",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "polisher",
+    "gender": "kids",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-polisher-kids-1.png",
+      "images/dummy-shirt-polisher-kids-2.png"
+    ]
+  },
+  {
+    "id": "shirt-piece-fabric",
+    "name": "Shirt Piece",
+    "category": "mens_wear",
+    "sub_category": "shirts",
+    "type": "piece",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-shirt-piece-1.png",
+      "images/dummy-shirt-piece-2.png"
+    ]
+  },
+  {
+    "id": "mundu-line",
+    "name": "Line Mundu",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "line",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-line-1.png",
+      "images/dummy-mundu-line-2.png"
+    ]
+  },
+  {
+    "id": "mundu-without-line",
+    "name": "Without Line Mundu",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "without_line",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-plain-1.png",
+      "images/dummy-mundu-plain-2.png"
+    ]
+  },
+  {
+    "id": "mundu-madeena",
+    "name": "Madeena Mundu",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "madeena",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-madeena-1.png",
+      "images/dummy-mundu-madeena-2.png"
+    ]
+  },
+  {
+    "id": "mundu-lunki",
+    "name": "Lunki",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "lunki",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-lunki-1.png",
+      "images/dummy-mundu-lunki-2.png"
+    ]
+  },
+  {
+    "id": "mundu-kayli",
+    "name": "Kayli",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "kayli",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-kayli-1.png",
+      "images/dummy-mundu-kayli-2.png"
+    ]
+  },
+  {
+    "id": "mundu-kayli",
+    "name": "Kayli check",
+    "category": "mens_wear",
+    "sub_category": "mundu",
+    "type": "kayli_check",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-mundu-kayli-1.png",
+      "images/dummy-mundu-kayli-2.png"
+    ]
+  },
+  {
+    "id": "oil-shall-color",
+    "name": "Shall Color Oil",
+    "category": "mens_wear",
+    "sub_category": "oil",
+    "type": "shall_color",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-oil-shall-1.png",
+      "images/dummy-oil-shall-2.png"
+    ]
+  },
+  {
+    "id": "oil-without-color",
+    "name": "Without Color Oil",
+    "category": "mens_wear",
+    "sub_category": "oil",
+    "type": "without_color",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-oil-plain-1.png",
+      "images/dummy-oil-plain-2.png"
+    ]
+  },
+  {
+    "id": "oil-kefiya",
+    "name": "Kefiya Oil",
+    "category": "mens_wear",
+    "sub_category": "oil",
+    "type": "kefiya",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-oil-kefiya-1.png",
+      "images/dummy-oil-kefiya-2.png"
+    ]
+  },
+  {
+    "id": "oil-noorani",
+    "name": "Noorani Oil",
+    "category": "mens_wear",
+    "sub_category": "oil",
+    "type": "noorani",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-oil-noorani-1.png",
+      "images/dummy-oil-noorani-2.png"
+    ]
+  },
+  {
+    "id": "oil-ready-made",
+    "name": "Ready Made Oil",
+    "category": "mens_wear",
+    "sub_category": "oil",
+    "type": "ready_made",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-oil-ready-1.png",
+      "images/dummy-oil-ready-2.png"
+    ]
+  },
+  {
+    "id": "hat-white-topi",
+    "name": "White Topi",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "topi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-topi-1.png",
+      "images/dummy-hat-topi-2.png"
+    ]
+  },
+  {
+    "id": "hat-kufi-embroidered",
+    "name": "Embroidered Kufi",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "kufi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-kufi-1.png",
+      "images/dummy-hat-kufi-2.png"
+    ]
+  },
+  {
+    "id": "hat-prayer-cap",
+    "name": "Prayer Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "prayer_cap",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-prayer-1.png",
+      "images/dummy-hat-prayer-2.png"
+    ]
+  },
+  {
+    "id": "hat-check-design",
+    "name": "Check Design Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "check",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-check-1.png",
+      "images/dummy-hat-check-2.png"
+    ]
+  },
+  {
+    "id": "hat-plain-cotton",
+    "name": "Plain Cotton Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "plain",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-plain-1.png",
+      "images/dummy-hat-plain-2.png"
+    ]
+  },
+  {
+    "id": "hat-arabic-style",
+    "name": "Arabic Style Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "arabic",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-arabic-1.png",
+      "images/dummy-hat-arabic-2.png"
+    ]
+  },
+  {
+    "id": "hat-kids-topi",
+    "name": "Kids Topi",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "kids",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-kids-1.png",
+      "images/dummy-hat-kids-2.png"
+    ]
+  },
+  {
+    "id": "hat-oman",
+    "name": "Omani Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "oman",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-oman-1.png",
+      "images/dummy-hat-oman-2.png"
+    ]
+  },
+  {
+    "id": "hat-china",
+    "name": "China Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "china",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-china-1.png",
+      "images/dummy-hat-china-2.png"
+    ]
+  },
+  {
+    "id": "hat-malaysia",
+    "name": "Malaysia Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "malaysia",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-malaysia-1.png",
+      "images/dummy-hat-malaysia-2.png"
+    ]
+  },
+  {
+    "id": "hat-turkey",
+    "name": "Turkish Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "turkey",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-turkey-1.png",
+      "images/dummy-hat-turkey-2.png"
+    ]
+  },
+  {
+    "id": "hat-soofi",
+    "name": "Soofi Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "soofi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-soofi-1.png",
+      "images/dummy-hat-soofi-2.png"
+    ]
+  },
+  {
+    "id": "hat-murkus",
+    "name": "Murkus Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "murkus",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-murkus-1.png",
+      "images/dummy-hat-murkus-2.png"
+    ]
+  },
+  {
+    "id": "hat-jinna",
+    "name": "Jinna Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "jinna",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-jinna-1.png",
+      "images/dummy-hat-jinna-2.png"
+    ]
+  },
+  {
+    "id": "hat-makka",
+    "name": "Makka Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "makka",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-makka-1.png",
+      "images/dummy-hat-makka-2.png"
+    ]
+  },
+  {
+    "id": "hat-yemen",
+    "name": "Yemeni Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "yemen",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-yemen-1.png",
+      "images/dummy-hat-yemen-2.png"
+    ]
+  },
+  {
+    "id": "hat-saudi",
+    "name": "Saudi Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "saudi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-saudi-1.png",
+      "images/dummy-hat-saudi-2.png"
+    ]
+  },
+  {
+    "id": "hat-afghan",
+    "name": "Afghan Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "afghan",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-afghan-1.png",
+      "images/dummy-hat-afghan-2.png"
+    ]
+  },
+  {
+    "id": "hat-pakistan",
+    "name": "Pakistani Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "pakistan",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-pakistan-1.png",
+      "images/dummy-hat-pakistan-2.png"
+    ]
+  },
+  {
+    "id": "hat-indian",
+    "name": "Indian Muslim Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "indian",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-indian-1.png",
+      "images/dummy-hat-indian-2.png"
+    ]
+  },
+  {
+    "id": "hat-bukhari",
+    "name": "Bukhari Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "bukhari",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-bukhari-1.png",
+      "images/dummy-hat-bukhari-2.png"
+    ]
+  },
+  {
+    "id": "hat-sindhi",
+    "name": "Sindhi Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "sindhi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-sindhi-1.png",
+      "images/dummy-hat-sindhi-2.png"
+    ]
+  },
+  {
+    "id": "hat-african",
+    "name": "African Muslim Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "african",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-african-1.png",
+      "images/dummy-hat-african-2.png"
+    ]
+  },
+  {
+    "id": "hat-handmade",
+    "name": "Handmade Crochet Cap",
+    "category": "mens_wear",
+    "sub_category": "hat",
+    "type": "handmade",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-hat-handmade-1.png",
+      "images/dummy-hat-handmade-2.png"
+    ]
+  },
+  {
+    "id": "book-madras-qayida",
+    "name": "Noorani Qayida",
+    "category": "books",
+    "sub_category": "madras_kithab",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "id": "book-madras-tajweed",
+    "name": "Tajweed Rules for Beginners",
+    "category": "books",
+    "sub_category": "madras_kithab",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-madras-3.png",
+      "images/dummy-book-madras-4.png"
+    ]
+  },
+  {
+    "id": "book-derass-fiqh",
+    "name": "Basic Fiqh Lessons",
+    "category": "books",
+    "sub_category": "derass_kithab",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-derass-1.png",
+      "images/dummy-book-derass-2.png"
+    ]
+  },
+  {
+    "id": "book-derass-aqidah",
+    "name": "Aqidah for Students",
+    "category": "books",
+    "sub_category": "derass_kithab",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-derass-3.png",
+      "images/dummy-book-derass-4.png"
+    ]
+  },
+  {
+    "id": "book-quran-arabic",
+    "name": "Holy Quran (Arabic)",
+    "category": "books",
+    "sub_category": "holy_quran",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-quran-1.png",
+      "images/dummy-book-quran-2.png"
+    ]
+  },
+  {
+    "id": "book-quran-translation",
+    "name": "Holy Quran with Translation",
+    "category": "books",
+    "sub_category": "holy_quran",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-quran-3.png",
+      "images/dummy-book-quran-4.png"
+    ]
+  },
+  {
+    "id": "book-islamic-dua",
+    "name": "Daily Duas & Supplications",
+    "category": "books",
+    "sub_category": "other_islamic_book",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-islamic-1.png",
+      "images/dummy-book-islamic-2.png"
+    ]
+  },
+  {
+    "id": "book-islamic-seerah",
+    "name": "Seerah of Prophet Muhammad ﷺ",
+    "category": "books",
+    "sub_category": "other_islamic_book",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-islamic-3.png",
+      "images/dummy-book-islamic-4.png"
+    ]
+  },
+  {
+    "id": "book-general-notebook",
+    "name": "General Study Notebook",
+    "category": "books",
+    "sub_category": "general_books",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-general-1.png",
+      "images/dummy-book-general-2.png"
+    ]
+  },
+  {
+    "id": "book-general-story",
+    "name": "Moral Story Book",
+    "category": "books",
+    "sub_category": "general_books",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-book-general-3.png",
+      "images/dummy-book-general-4.png"
+    ]
+  },
+  {
+    "id": "perfume-oud-classic",
+    "name": "Oud Classic",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "oud",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-oud-1.png",
+      "images/dummy-perfume-oud-2.png"
+    ]
+  },
+  {
+    "id": "perfume-musk-al-haram",
+    "name": "Musk Al Haram",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "musk",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-musk-1.png",
+      "images/dummy-perfume-musk-2.png"
+    ]
+  },
+  {
+    "id": "perfume-amber",
+    "name": "Amber Touch",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "amber",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-amber-1.png",
+      "images/dummy-perfume-amber-2.png"
+    ]
+  },
+  {
+    "id": "perfume-rose",
+    "name": "Rose Attar",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "rose",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-rose-1.png",
+      "images/dummy-perfume-rose-2.png"
+    ]
+  },
+  {
+    "id": "perfume-sandal",
+    "name": "Sandalwood Attar",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "sandalwood",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-sandal-1.png",
+      "images/dummy-perfume-sandal-2.png"
+    ]
+  },
+  {
+    "id": "perfume-kasturi",
+    "name": "Kasturi Musk",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "kasturi",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-kasturi-1.png",
+      "images/dummy-perfume-kasturi-2.png"
+    ]
+  },
+  {
+    "id": "perfume-jannatul-firdous",
+    "name": "Jannatul Firdous",
+    "category": "perfumes",
+    "sub_category": "attar",
+    "type": "floral",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-jannatul-1.png",
+      "images/dummy-perfume-jannatul-2.png"
+    ]
+  },
+  {
+    "id": "perfume-ajmal-style",
+    "name": "Arabic Blend Perfume",
+    "category": "perfumes",
+    "sub_category": "spray",
+    "type": "arabic_blend",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-spray-1.png",
+      "images/dummy-perfume-spray-2.png"
+    ]
+  },
+  {
+    "id": "perfume-al-rehab",
+    "name": "Al Rehab Roll On",
+    "category": "perfumes",
+    "sub_category": "roll_on",
+    "type": "roll_on",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-perfume-roll-1.png",
+      "images/dummy-perfume-roll-2.png"
+    ]
+  },
+  {
+    "id": "accessory-tasbeeh-wood",
+    "name": "Wooden Tasbeeh",
+    "category": "islamic_accessories",
+    "sub_category": "tasbeeh",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-tasbeeh-wood-1.png",
+      "images/dummy-accessory-tasbeeh-wood-2.png"
+    ]
+  },
+  {
+    "id": "accessory-tasbeeh-stone",
+    "name": "Stone Tasbeeh",
+    "category": "islamic_accessories",
+    "sub_category": "tasbeeh",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-tasbeeh-stone-1.png",
+      "images/dummy-accessory-tasbeeh-stone-2.png"
+    ]
+  },
+  {
+    "id": "accessory-digital-tasbeeh",
+    "name": "Digital Tasbeeh Counter",
+    "category": "islamic_accessories",
+    "sub_category": "tasbeeh",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-digital-tasbeeh-1.png",
+      "images/dummy-accessory-digital-tasbeeh-2.png"
+    ]
+  },
+  {
+    "id": "accessory-miswak",
+    "name": "Natural Miswak",
+    "category": "islamic_accessories",
+    "sub_category": "miswak",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-miswak-1.png",
+      "images/dummy-accessory-miswak-2.png"
+    ]
+  },
+  {
+    "id": "accessory-prayer-mat",
+    "name": "Prayer Mat",
+    "category": "islamic_accessories",
+    "sub_category": "prayer_mat",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-prayer-mat-1.png",
+      "images/dummy-accessory-prayer-mat-2.png"
+    ]
+  },
+  {
+    "id": "accessory-pocket-prayer-mat",
+    "name": "Pocket Prayer Mat",
+    "category": "islamic_accessories",
+    "sub_category": "prayer_mat",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-pocket-mat-1.png",
+      "images/dummy-accessory-pocket-mat-2.png"
+    ]
+  },
+  {
+    "id": "accessory-quran-stand",
+    "name": "Quran Stand (Rehal)",
+    "category": "islamic_accessories",
+    "sub_category": "quran_accessory",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-rehal-1.png",
+      "images/dummy-accessory-rehal-2.png"
+    ]
+  },
+  {
+    "id": "accessory-janamaz-compass",
+    "name": "Qibla Compass",
+    "category": "islamic_accessories",
+    "sub_category": "qibla",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-qibla-1.png",
+      "images/dummy-accessory-qibla-2.png"
+    ]
+  },
+  {
+    "id": "accessory-dua-card",
+    "name": "Daily Dua Cards",
+    "category": "islamic_accessories",
+    "sub_category": "dua",
+    "price": 99,
+    "description": "description",
+    "images": [
+      "images/dummy-accessory-dua-1.png",
+      "images/dummy-accessory-dua-2.png"
+    ]
+  }
+]

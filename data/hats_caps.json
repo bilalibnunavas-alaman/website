@@ -1,0 +1,290 @@
+[
+  {
+    "slug": "hat-white-topi",
+    "name": "White Topi",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-hat-topi-1.png",
+    "images": [
+      "images/dummy-hat-topi-1.png",
+      "images/dummy-hat-topi-2.png"
+    ]
+  },
+  {
+    "slug": "hat-kufi-embroidered",
+    "name": "Embroidered Kufi",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-kufi-1.png",
+    "images": [
+      "images/dummy-hat-kufi-1.png",
+      "images/dummy-hat-kufi-2.png"
+    ]
+  },
+  {
+    "slug": "hat-prayer-cap",
+    "name": "Prayer Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-prayer-1.png",
+    "images": [
+      "images/dummy-hat-prayer-1.png",
+      "images/dummy-hat-prayer-2.png"
+    ]
+  },
+  {
+    "slug": "hat-check-design",
+    "name": "Check Design Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-check-1.png",
+    "images": [
+      "images/dummy-hat-check-1.png",
+      "images/dummy-hat-check-2.png"
+    ]
+  },
+  {
+    "slug": "hat-plain-cotton",
+    "name": "Plain Cotton Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-hat-plain-1.png",
+    "images": [
+      "images/dummy-hat-plain-1.png",
+      "images/dummy-hat-plain-2.png"
+    ]
+  },
+  {
+    "slug": "hat-arabic-style",
+    "name": "Arabic Style Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-arabic-1.png",
+    "images": [
+      "images/dummy-hat-arabic-1.png",
+      "images/dummy-hat-arabic-2.png"
+    ]
+  },
+  {
+    "slug": "hat-kids-topi",
+    "name": "Kids Topi",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-kids-1.png",
+    "images": [
+      "images/dummy-hat-kids-1.png",
+      "images/dummy-hat-kids-2.png"
+    ]
+  },
+  {
+    "slug": "hat-oman",
+    "name": "Omani Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-oman-1.png",
+    "images": [
+      "images/dummy-hat-oman-1.png",
+      "images/dummy-hat-oman-2.png"
+    ]
+  },
+  {
+    "slug": "hat-china",
+    "name": "China Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-china-1.png",
+    "images": [
+      "images/dummy-hat-china-1.png",
+      "images/dummy-hat-china-2.png"
+    ]
+  },
+  {
+    "slug": "hat-malaysia",
+    "name": "Malaysia Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-malaysia-1.png",
+    "images": [
+      "images/dummy-hat-malaysia-1.png",
+      "images/dummy-hat-malaysia-2.png"
+    ]
+  },
+  {
+    "slug": "hat-turkey",
+    "name": "Turkish Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-turkey-1.png",
+    "images": [
+      "images/dummy-hat-turkey-1.png",
+      "images/dummy-hat-turkey-2.png"
+    ]
+  },
+  {
+    "slug": "hat-soofi",
+    "name": "Soofi Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-soofi-1.png",
+    "images": [
+      "images/dummy-hat-soofi-1.png",
+      "images/dummy-hat-soofi-2.png"
+    ]
+  },
+  {
+    "slug": "hat-murkus",
+    "name": "Murkus Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-murkus-1.png",
+    "images": [
+      "images/dummy-hat-murkus-1.png",
+      "images/dummy-hat-murkus-2.png"
+    ]
+  },
+  {
+    "slug": "hat-jinna",
+    "name": "Jinna Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-jinna-1.png",
+    "images": [
+      "images/dummy-hat-jinna-1.png",
+      "images/dummy-hat-jinna-2.png"
+    ]
+  },
+  {
+    "slug": "hat-makka",
+    "name": "Makka Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-hat-makka-1.png",
+    "images": [
+      "images/dummy-hat-makka-1.png",
+      "images/dummy-hat-makka-2.png"
+    ]
+  },
+  {
+    "slug": "hat-yemen",
+    "name": "Yemeni Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-yemen-1.png",
+    "images": [
+      "images/dummy-hat-yemen-1.png",
+      "images/dummy-hat-yemen-2.png"
+    ]
+  },
+  {
+    "slug": "hat-saudi",
+    "name": "Saudi Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-saudi-1.png",
+    "images": [
+      "images/dummy-hat-saudi-1.png",
+      "images/dummy-hat-saudi-2.png"
+    ]
+  },
+  {
+    "slug": "hat-afghan",
+    "name": "Afghan Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-afghan-1.png",
+    "images": [
+      "images/dummy-hat-afghan-1.png",
+      "images/dummy-hat-afghan-2.png"
+    ]
+  },
+  {
+    "slug": "hat-pakistan",
+    "name": "Pakistani Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-pakistan-1.png",
+    "images": [
+      "images/dummy-hat-pakistan-1.png",
+      "images/dummy-hat-pakistan-2.png"
+    ]
+  },
+  {
+    "slug": "hat-indian",
+    "name": "Indian Muslim Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/dummy-hat-indian-1.png",
+    "images": [
+      "images/dummy-hat-indian-1.png",
+      "images/dummy-hat-indian-2.png"
+    ]
+  },
+  {
+    "slug": "hat-bukhari",
+    "name": "Bukhari Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-bukhari-1.png",
+    "images": [
+      "images/dummy-hat-bukhari-1.png",
+      "images/dummy-hat-bukhari-2.png"
+    ]
+  },
+  {
+    "slug": "hat-sindhi",
+    "name": "Sindhi Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "New",
+    "image": "images/dummy-hat-sindhi-1.png",
+    "images": [
+      "images/dummy-hat-sindhi-1.png",
+      "images/dummy-hat-sindhi-2.png"
+    ]
+  },
+  {
+    "slug": "hat-african",
+    "name": "African Muslim Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-african-1.png",
+    "images": [
+      "images/dummy-hat-african-1.png",
+      "images/dummy-hat-african-2.png"
+    ]
+  },
+  {
+    "slug": "hat-handmade",
+    "name": "Handmade Crochet Cap",
+    "category": "mens_wear",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/dummy-hat-handmade-1.png",
+    "images": [
+      "images/dummy-hat-handmade-1.png",
+      "images/dummy-hat-handmade-2.png"
+    ]
+  }
+]

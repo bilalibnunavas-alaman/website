@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "book-madras-qayida",
+    "name": "Noorani Qayida",
+    "category": "books",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-madras-tajweed",
+    "name": "Tajweed Rules for Beginners",
+    "category": "books",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-derass-fiqh",
+    "name": "Basic Fiqh Lessons",
+    "category": "books",
+    "price": 99,
+    "tag": "New",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-derass-aqidah",
+    "name": "Aqidah for Students",
+    "category": "books",
+    "price": 99,
+    "tag": "New",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-quran-arabic",
+    "name": "Holy Quran (Arabic)",
+    "category": "books",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-quran-translation",
+    "name": "Holy Quran with Translation",
+    "category": "books",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-islamic-dua",
+    "name": "Daily Duas & Supplications",
+    "category": "books",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-islamic-seerah",
+    "name": "Seerah of Prophet Muhammad ﷺ",
+    "category": "books",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-general-notebook",
+    "name": "General Study Notebook",
+    "category": "books",
+    "price": 99,
+    "tag": "New",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  },
+  {
+    "slug": "book-general-story",
+    "name": "Moral Story Book",
+    "category": "books",
+    "price": 99,
+    "tag": "New",
+    "image": "images/noorani.png",
+    "images": [
+      "images/noorani.png",
+      "images/noorani.png"
+    ]
+  }
+]

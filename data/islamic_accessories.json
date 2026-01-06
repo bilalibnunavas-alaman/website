@@ -1,0 +1,986 @@
+[
+  {
+    "slug": "accessory-tasbeeh-wood",
+    "name": "Wooden Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-stone",
+    "name": "Stone Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-digital-tasbeeh",
+    "name": "Digital Tasbeeh Counter",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-miswak",
+    "name": "Natural Miswak",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat",
+    "name": "Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-pocket-prayer-mat",
+    "name": "Pocket Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-quran-stand",
+    "name": "Quran Stand (Rehal)",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-janamaz-compass",
+    "name": "Qibla Compass",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-dua-card",
+    "name": "Daily Dua Cards",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-crystal",
+    "name": "Crystal Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-amber",
+    "name": "Amber Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 199,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-agarwood",
+    "name": "Agarwood Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 299,
+    "tag": "Luxury",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-olive-wood",
+    "name": "Olive Wood Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbeeh-sandalwood",
+    "name": "Sandalwood Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 179,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-digital-tasbeeh-ring",
+    "name": "Digital Tasbeeh Ring",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-digital-tasbeeh-led",
+    "name": "LED Digital Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 119,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-luxury",
+    "name": "Luxury Velvet Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 249,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-travel",
+    "name": "Travel Prayer Mat with Bag",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-kids",
+    "name": "Kids Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 79,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-madinah",
+    "name": "Madinah Design Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 159,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-turkish",
+    "name": "Turkish Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 189,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-memory-foam",
+    "name": "Memory Foam Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 199,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-mat-waterproof",
+    "name": "Waterproof Prayer Mat",
+    "category": "islamic_accessories",
+    "price": 109,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-rehal-wooden",
+    "name": "Wooden Quran Stand",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-rehal-brass",
+    "name": "Brass Quran Stand",
+    "category": "islamic_accessories",
+    "price": 199,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-rehal-foldable",
+    "name": "Foldable Quran Stand",
+    "category": "islamic_accessories",
+    "price": 89,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-rehal-carved",
+    "name": "Hand-Carved Quran Stand",
+    "category": "islamic_accessories",
+    "price": 299,
+    "tag": "Luxury",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-qibla-compass-digital",
+    "name": "Digital Qibla Compass",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-qibla-compass-pocket",
+    "name": "Pocket Qibla Compass",
+    "category": "islamic_accessories",
+    "price": 69,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-qibla-compass-watch",
+    "name": "Qibla Watch Compass",
+    "category": "islamic_accessories",
+    "price": 199,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-ayatul-kursi",
+    "name": "Ayatul Kursi Wall Frame",
+    "category": "islamic_accessories",
+    "price": 179,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-bismillah",
+    "name": "Bismillah Wall Frame",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-kalima",
+    "name": "Kalima Wall Frame",
+    "category": "islamic_accessories",
+    "price": 159,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-99-names",
+    "name": "99 Names of Allah Frame",
+    "category": "islamic_accessories",
+    "price": 249,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-kaaba",
+    "name": "Kaaba Wall Frame",
+    "category": "islamic_accessories",
+    "price": 189,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-madinah",
+    "name": "Madinah Wall Frame",
+    "category": "islamic_accessories",
+    "price": 189,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wall-frame-3d",
+    "name": "3D Islamic Wall Art",
+    "category": "islamic_accessories",
+    "price": 299,
+    "tag": "Luxury",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-azaan-clock",
+    "name": "Azaan Clock",
+    "category": "islamic_accessories",
+    "price": 199,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-azaan-clock-digital",
+    "name": "Digital Azaan Clock",
+    "category": "islamic_accessories",
+    "price": 249,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-azaan-clock-wall",
+    "name": "Wall Azaan Clock",
+    "category": "islamic_accessories",
+    "price": 179,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-azaan-clock-table",
+    "name": "Table Azaan Clock",
+    "category": "islamic_accessories",
+    "price": 159,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-zamzam-bottle",
+    "name": "Zamzam Water Bottle",
+    "category": "islamic_accessories",
+    "price": 79,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-zamzam-bottle-steel",
+    "name": "Stainless Steel Zamzam Bottle",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-zamzam-bottle-glass",
+    "name": "Glass Zamzam Bottle",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-ihram-belt",
+    "name": "Ihram Belt",
+    "category": "islamic_accessories",
+    "price": 49,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-ihram-belt-zipper",
+    "name": "Ihram Belt with Zipper",
+    "category": "islamic_accessories",
+    "price": 69,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-ihram-towel",
+    "name": "Ihram Towel Set",
+    "category": "islamic_accessories",
+    "price": 89,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-miswak-holder",
+    "name": "Miswak Holder",
+    "category": "islamic_accessories",
+    "price": 39,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-miswak-set",
+    "name": "Miswak Gift Set",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-attar-bottle",
+    "name": "Attar Bottle Set",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-gift-box-ramadan",
+    "name": "Ramadan Gift Box",
+    "category": "islamic_accessories",
+    "price": 299,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-gift-box-hajj",
+    "name": "Hajj Gift Box",
+    "category": "islamic_accessories",
+    "price": 349,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-gift-box-wedding",
+    "name": "Islamic Wedding Gift Box",
+    "category": "islamic_accessories",
+    "price": 399,
+    "tag": "Luxury",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-gift-box-newborn",
+    "name": "Newborn Islamic Gift Box",
+    "category": "islamic_accessories",
+    "price": 249,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-dua-book",
+    "name": "Pocket Dua Book",
+    "category": "islamic_accessories",
+    "price": 59,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-dua-keychain",
+    "name": "Dua Keychain",
+    "category": "islamic_accessories",
+    "price": 29,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbih-counter-hand",
+    "name": "Hand Tally Counter",
+    "category": "islamic_accessories",
+    "price": 79,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-hijab-pins",
+    "name": "Hijab Pin Set",
+    "category": "islamic_accessories",
+    "price": 49,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-hijab-magnets",
+    "name": "Magnetic Hijab Pins",
+    "category": "islamic_accessories",
+    "price": 69,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-kufi-cap",
+    "name": "Traditional Kufi Cap",
+    "category": "islamic_accessories",
+    "price": 79,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-kufi-embroidered",
+    "name": "Embroidered Kufi Cap",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-quran-cover",
+    "name": "Quran Cover",
+    "category": "islamic_accessories",
+    "price": 89,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-quran-cover-leather",
+    "name": "Leather Quran Cover",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-islamic-calendar",
+    "name": "Islamic Wall Calendar",
+    "category": "islamic_accessories",
+    "price": 59,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-ramadan-lantern",
+    "name": "Ramadan Lantern",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-ramadan-lights",
+    "name": "Ramadan Decorative Lights",
+    "category": "islamic_accessories",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-eid-decoration-set",
+    "name": "Eid Decoration Set",
+    "category": "islamic_accessories",
+    "price": 179,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-kids-prayer-set",
+    "name": "Kids Prayer Set",
+    "category": "islamic_accessories",
+    "price": 149,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-islamic-bookmark",
+    "name": "Islamic Bookmarks Set",
+    "category": "islamic_accessories",
+    "price": 39,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-beads-bag",
+    "name": "Prayer Beads Carry Bag",
+    "category": "islamic_accessories",
+    "price": 49,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-wudu-socks",
+    "name": "Wudu Socks",
+    "category": "islamic_accessories",
+    "price": 79,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-islamic-wall-decal",
+    "name": "Islamic Wall Decal",
+    "category": "islamic_accessories",
+    "price": 69,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-alarm",
+    "name": "Prayer Time Alarm",
+    "category": "islamic_accessories",
+    "price": 129,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-quran-pen-reader",
+    "name": "Quran Pen Reader",
+    "category": "islamic_accessories",
+    "price": 299,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-digital-quran",
+    "name": "Digital Quran Player",
+    "category": "islamic_accessories",
+    "price": 349,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-mashallah-frame",
+    "name": "MashaAllah Wall Frame",
+    "category": "islamic_accessories",
+    "price": 139,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-alhamdulillah-frame",
+    "name": "Alhamdulillah Wall Frame",
+    "category": "islamic_accessories",
+    "price": 139,
+    "tag": "Best Selling",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-subhanallah-frame",
+    "name": "SubhanAllah Wall Frame",
+    "category": "islamic_accessories",
+    "price": 139,
+    "tag": "Featured",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-islamic-canvas-set",
+    "name": "Islamic Canvas Art Set (3pc)",
+    "category": "islamic_accessories",
+    "price": 399,
+    "tag": "Luxury",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-prayer-time-app-clock",
+    "name": "Smart Prayer Time Clock",
+    "category": "islamic_accessories",
+    "price": 279,
+    "tag": "New",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbih-rose",
+    "name": "Rose Quartz Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 169,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  },
+  {
+    "slug": "accessory-tasbih-turquoise",
+    "name": "Turquoise Tasbeeh",
+    "category": "islamic_accessories",
+    "price": 189,
+    "tag": "Premium",
+    "image": "images/counter.png",
+    "images": [
+      "images/counter.png",
+      "images/counter.png"
+    ]
+  }
+]

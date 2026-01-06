@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "cherry-hijab",
+    "name": "Cherry Hijab",
+    "category": "Hijabs",
+    "price": "$99.00",
+    "tag": "Best Selling",
+    "image": "images/hijab.png",
+    "images": [
+      "images/hijab.png",
+      "images/cherry-2.avif",
+      "images/cherry-3.avif"
+    ]
+  },
+  {
+    "slug": "rose-hijab",
+    "name": "Rose Hijab",
+    "category": "Hijabs",
+    "price": "$89.00",
+    "tag": "New Collection",
+    "image": "images/rose-1.png",
+    "images": [
+      "images/rose-1.png",
+      "images/rose-2.avif"
+    ]
+  }
+]

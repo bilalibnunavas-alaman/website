@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "perfume-oud-classic",
+    "name": "Oud Classic",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-musk-al-haram",
+    "name": "Musk Al Haram",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-amber",
+    "name": "Amber Touch",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "New",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-rose",
+    "name": "Rose Attar",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "New",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-sandal",
+    "name": "Sandalwood Attar",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-kasturi",
+    "name": "Kasturi Musk",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Best Selling",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-jannatul-firdous",
+    "name": "Jannatul Firdous",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-ajmal-style",
+    "name": "Arabic Blend Perfume",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "New",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  },
+  {
+    "slug": "perfume-al-rehab",
+    "name": "Al Rehab Roll On",
+    "category": "perfumes",
+    "price": 99,
+    "tag": "Featured",
+    "image": "images/perfume1.png",
+    "images": [
+      "images/perfume1.png",
+      "images/perfume1.png"
+    ]
+  }
+]
