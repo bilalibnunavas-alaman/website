@@ -74,6 +74,29 @@
       }
     });
   </script>
+  <script>
+function sendWhatsApp() {
+  const phoneNumber = "918547319961"; // without +
+
+  // Get product details (change selectors as per your page)
+  const productName = document.querySelector(".product-title")?.innerText || "Product";
+  const productPrice = document.querySelector(".product-price")?.innerText || "";
+  const productURL = window.location.href;
+
+  const message = 
+    `Hi, I am interested in this product.\n\n` +
+    `Product: ${productName}\n` +
+    `Price: ${productPrice}\n` +
+    `Link: ${productURL}`;
+
+  const whatsappURL =
+    `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
+
+
   <script type="text/javascript">
     !function (o, c) {
       var n = c.documentElement
@@ -97,8 +120,9 @@
       "hideDecimalForWholeNumbers": false
     };
   </script>
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 
 <body>
     <div class="page-wrapper">
@@ -270,7 +294,7 @@
                                 <form id="email-form" name="email-form" data-name="Email Form" method="get"
                                     data-wf-page-id="6805d24020e2aad6e5520fbd"
                                     data-wf-element-id="6740b850-7117-cfbc-d853-83f85d3b8ecb">
-                                    <div class="product-details-tabs-menu">
+                                    <!-- <div class="product-details-tabs-menu">
                                         <label class="w-checkbox product-details-checkbox">
                                             <div
                                                 class="w-checkbox-input w-checkbox-input--inputType-custom product-details-checkbox-field s w--redirected-checked">
@@ -299,7 +323,7 @@
                                             <input type="checkbox" id="checkbox-2" name="checkbox-2"
                                                 data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1" />
                                         </label>
-                                    </div>
+                                    </div> -->
                                 </form>
                                 <div class="w-form-done">
                                     <div>Thank you! Your submission has been received!</div>
@@ -309,21 +333,23 @@
                                 </div>
                             </div>
                             <div class="product-details-add-to-cart">
-                                <form data-node-type="commerce-add-to-cart-form"
-                                    data-commerce-sku-id="6808a927cbda9ba19c2a1657"
-                                    data-loading-text="Adding to cart..."
-                                    data-commerce-product-id="6808a9262439612a4cebbeda"
-                                    class="w-commerce-commerceaddtocartform product-details-default-state">
-                                    <div class="button cart-button">
-                                        <div class="button-text">Add to cart</div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 25"
-                                            fill="none" class="button-icon">
-                                            <path
-                                                d="M21.706 13.208L14.706 20.208C14.5174 20.3901 14.2648 20.4909 14.0026 20.4887C13.7404 20.4864 13.4896 20.3812 13.3042 20.1958C13.1188 20.0104 13.0136 19.7596 13.0113 19.4974C13.009 19.2352 13.1098 18.9826 13.292 18.794L18.586 13.5H3C2.73478 13.5 2.48043 13.3946 2.29289 13.2071C2.10536 13.0196 2 12.7652 2 12.5C2 12.2348 2.10536 11.9804 2.29289 11.7929C2.48043 11.6053 2.73478 11.5 3 11.5H18.586L13.293 6.20698C13.1108 6.01838 13.01 5.76578 13.0123 5.50358C13.0146 5.24138 13.1198 4.99057 13.3052 4.80516C13.4906 4.61975 13.7414 4.51458 14.0036 4.51231C14.2658 4.51003 14.5184 4.61082 14.707 4.79298L21.707 11.793C21.8001 11.8859 21.874 11.9962 21.9244 12.1177C21.9748 12.2392 22.0008 12.3694 22.0008 12.501C22.0008 12.6325 21.9748 12.7628 21.9244 12.8842C21.874 13.0057 21.8001 13.1161 21.707 13.209L21.706 13.208Z"
-                                                fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                    <input type="submit" data-node-type="commerce-add-to-cart-button"
+  <div class="button cart-button" onclick="sendWhatsApp()" style="cursor:pointer;">
+    
+    <i class="fa-brands fa-whatsapp" style="font-size:28px;color:#25D366;"></i>
+    <div class="button-text">Enquiry</div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 25"
+      fill="none" class="button-icon">
+      <path
+        d="M21.706 13.208L14.706 20.208C14.5174 20.3901 14.2648 20.4909 14.0026 20.4887C13.7404 20.4864 13.4896 20.3812 13.3042 20.1958C13.1188 20.0104 13.0136 19.7596 13.0113 19.4974C13.009 19.2352 13.1098 18.9826 13.292 18.794L18.586 13.5H3C2.73478 13.5 2.48043 13.3946 2.29289 13.2071C2.10536 13.0196 2 12.7652 2 12.5C2 12.2348 2.10536 11.9804 2.29289 11.7929C2.48043 11.6053 2.73478 11.5 3 11.5H18.586L13.293 6.20698C13.1108 6.01838 13.01 5.76578 13.0123 5.50358C13.0146 5.24138 13.1198 4.99057 13.3052 4.80516C13.4906 4.61975 13.7414 4.51458 14.0036 4.51231C14.2658 4.51003 14.5184 4.61082 14.707 4.79298L21.707 11.793Z"
+        fill="currentColor" />
+    </svg>
+
+  </div>
+</div>
+
+
+                                    <!-- <input type="submit" data-node-type="commerce-add-to-cart-button"
                                         data-loading-text="." aria-busy="false" aria-haspopup="dialog"
                                         class="w-commerce-commerceaddtocartbutton product-details-add-to-cart-button"
                                         value="" />
@@ -331,7 +357,8 @@
                                         data-subscription-text="Subscribe now" aria-busy="false" aria-haspopup="false"
                                         style="display:none" class="w-commerce-commercebuynowbutton"
                                         href="/checkout">Buy now</a>
-                                </form>
+                                </form> -->
+                                
                                 <div style="display:none" class="w-commerce-commerceaddtocartoutofstock" tabindex="0">
                                     <div>This product is out of stock.</div>
                                 </div>
@@ -347,7 +374,7 @@
                                         Product is not available in this quantity.</div>
                                 </div>
                             </div>
-                            <div class="product-details-faq">
+                            <!-- <div class="product-details-faq">
                                 <div data-delay="0" data-hover="false" data-w-id="1a8a7cde-970d-397c-e0f4-b2403483f1c4"
                                     class="faq-question-wrapper w-dropdown">
                                     <div class="faq-question-block w-dropdown-toggle">
@@ -449,7 +476,7 @@
                                             for comfort, breathability, and elegance.</p>
                                     </nav>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -601,7 +628,7 @@
               data-w-id="e23a395c-629a-f753-7a5f-d78140bae0b3" href="https://www.instagram.com/"
               target="_blank" class="footer-social-card w-inline-block">
               <img
-                src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/542756809_122201457554097366_5365202594587368030_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3hpwM0-0ROcQ7kNvwEIFPEJ&_nc_oc=AdlYnx1Shz1yjFEvi9q34ZLmRbXPJGGlLvUs7xb7k0etspqGo5MO1UokK4m8pbTVkDikYnZS4qhvxJZyVAltBFf4&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&_nc_gid=NvLOuCU21WW4GkZaIGdlvA&oh=00_Afg0HQBiqV2SYCPqEbI5euFG9j-rRg0rHcDI3Hhs14fsbA&oe=692CBAE9"
+                src="https://i.pinimg.com/736x/d8/03/e8/d803e8e110d4d3c5ef35aff8f23b7718.jpg"
                 loading="eager" alt="" class="footer-social-image" />
               <div class="footer-social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 40 40" fill="none"
@@ -727,13 +754,13 @@
                 class="footer-copyright-link">Hostlane Technolab</a>
             </div>
           </div>
-          <div class="footer-copyright-link-block">
+          <!-- <div class="footer-copyright-link-block">
             <a href="/utility/style-guide" class="footer-copyright-link">Style Guide</a>
             <div class="footer-copyright-text">|</div>
             <a href="/utility/change-log" class="footer-copyright-link">Change-Log</a>
             <div class="footer-copyright-text">|</div>
             <a href="/utility/license" class="footer-copyright-link">License</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
