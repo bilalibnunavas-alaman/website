@@ -1,5 +1,7 @@
 /admin /admin/ 301
 /admin/login /admin/ 302
+/admin/config.yml /admin/config.yml 200
+/admin/index.html /admin/index.html 200
 /admin/* /admin/index.html 200
 /index.html/admin /admin/ 301
 /index.html/admin/* /admin/:splat 301
