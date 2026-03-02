@@ -672,6 +672,55 @@
     crossorigin="anonymous"></script>
   <script src="./index_files/webflow.cac8ff97.2f7fdbc4414de950.js"
     type="text/javascript"></script>
+  <button id="codexScrollTop" class="codex-scroll-top" aria-label="Scroll to top" type="button">↑</button>
+  <style>
+    .codex-scroll-top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 46px;
+      height: 46px;
+      border: 0;
+      border-radius: 999px;
+      background: #111;
+      color: #fff;
+      font-size: 24px;
+      line-height: 1;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity .2s ease, transform .2s ease, visibility .2s ease;
+      z-index: 9999;
+      box-shadow: 0 8px 18px rgba(0,0,0,.2);
+    }
+    .codex-scroll-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .codex-scroll-top:hover {
+      background: #000;
+    }
+  </style>
+  <script>
+    (function () {
+      var btn = document.getElementById('codexScrollTop');
+      if (!btn) return;
+      function toggleBtn() {
+        if (window.pageYOffset > 250) {
+          btn.classList.add('is-visible');
+        } else {
+          btn.classList.remove('is-visible');
+        }
+      }
+      window.addEventListener('scroll', toggleBtn, { passive: true });
+      btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      toggleBtn();
+    })();
+  </script>
 </body>
 
 </html>
