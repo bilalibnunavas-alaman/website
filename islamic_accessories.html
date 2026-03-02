@@ -488,39 +488,81 @@
   </div>
 
   <script>
-    fetch("data/islamic_accessories.json")
-      .then(res => res.json())
-      .then(products => {
-        const list = document.getElementById("productList");
-        list.innerHTML = "";
+    const pageKey = window.location.pathname.split('/').pop().replace('.html', '').toLowerCase();
 
-        products.forEach(p => {
-          list.innerHTML += `
-      <div role="listitem" class="product-item">
-        <div class="product-post">
-          <a href="product_detail.html?id=${p.slug}" class="product-image-block w-inline-block">
-            <img src="${p.image}" class="product-image" alt="${p.name}">
-          </a>
+    const matchesPage = (product) => {
+      const category = String(product.category || '').toLowerCase();
+      const subCategory = String(product.sub_category || '').toLowerCase();
+      const type = String(product.type || '').toLowerCase();
+      const name = String(product.name || '').toLowerCase();
 
-          <div class="product-content-block">
-            ${p.tag ? `<div class="product-tag">${p.tag}</div>` : ``}
+      const rules = {
+        shop: () => true,
+        book: () => category === 'books',
+        perfumes: () => category === 'perfumes',
+        islamic_accessories: () => category === 'islamic_accessories',
+        hijab: () => category === 'hijabs' || subCategory.includes('hijab') || name.includes('hijab'),
+        hat: () => subCategory === 'hat' || type.includes('cap') || type.includes('topi') || category === 'hats_caps',
+        jubba: () => subCategory === 'jubba' || name.includes('jubba'),
+        kandura: () => subCategory === 'kanthoora' || subCategory === 'kandura' || name.includes('kandura') || name.includes('kanthoora'),
+        koil: () => subCategory === 'oil' || subCategory === 'koil' || name.includes('oil') || name.includes('koil'),
+        mundu: () => subCategory === 'mundu' || name.includes('mundu'),
+        shirt: () => subCategory === 'shirts' || name.includes('shirt'),
+        pant: () => type.includes('pant') || name.includes('pant'),
+        pants: () => type.includes('pant') || name.includes('pant'),
+        abaya: () => name.includes('abaya') || subCategory.includes('abaya') || category.includes('abaya'),
+        maxi: () => name.includes('maxi') || subCategory.includes('maxi') || category.includes('maxi'),
+        top: () => name.includes('top') || subCategory.includes('top') || category.includes('top')
+      };
 
-            <div class="product-card">
-              <div class="product-text-block">
-                <div class="product-category">${p.category}</div>
-                <a href="product-detail.html?id=${p.slug}" class="product-name">${p.name}</a>
-              </div>
+      return rules[pageKey] ? rules[pageKey]() : true;
+    };
 
-              <div class="product-price-block">
-                <div class="product-price">
-                  <div class="product-original-price">${p.price}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>`;
+    fetch('data/products.json')
+      .then((res) => res.json())
+      .then((data) => {
+        const source = Array.isArray(data) ? data : (Array.isArray(data.products) ? data.products : []);
+        const products = source.filter(matchesPage);
+        const list = document.getElementById('productList');
+        if (!list) return;
+
+        list.innerHTML = '';
+
+        products.forEach((p) => {
+          const productId = p.id || p.slug || '';
+          const image = Array.isArray(p.images) && p.images.length ? p.images[0] : (p.image || 'images/uploads/placeholder.png');
+          const price = p.price ?? '';
+          const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
+
+          const cardHtml = [
+            '<div role="listitem" class="product-item">',
+            '  <div class="product-post">',
+            '    <a href="product_detail.html?id=' + productId + '" class="product-image-block w-inline-block">',
+            '      <img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">',
+            '    </a>',
+            '    <div class="product-content-block">',
+                 tagHtml,
+            '      <div class="product-card">',
+            '        <div class="product-text-block">',
+            '          <div class="product-category">' + (p.category || '') + '</div>',
+            '          <a href="product_detail.html?id=' + productId + '" class="product-name">' + (p.name || '') + '</a>',
+            '        </div>',
+            '        <div class="product-price-block">',
+            '          <div class="product-price">',
+            '            <div class="product-original-price">' + price + '</div>',
+            '          </div>',
+            '        </div>',
+            '      </div>',
+            '    </div>',
+            '  </div>',
+            '</div>'
+          ].join('\n');
+
+          list.innerHTML += cardHtml;
         });
+      })
+      .catch((error) => {
+        console.error('Failed to load products:', error);
       });
   </script>
 
