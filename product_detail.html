@@ -789,16 +789,34 @@ function sendWhatsApp() {
           ? product.images
           : (product.image ? [product.image] : []);
 
-        document.getElementById("productName").textContent = product.name || "";
-        document.getElementById("productCategory").textContent = product.category || "";
-        document.getElementById("productTitle").textContent = product.name || "";
-        document.getElementById("productDescription").textContent = product.description || "";
-        document.getElementById("productPrice").textContent = product.price ?? "";
+        const setField = (id, value) => {
+          const el = document.getElementById(id);
+          if (!el) return;
+          const hasValue = value !== undefined && value !== null && String(value).trim() !== "";
+          if (!hasValue) {
+            el.style.display = "none";
+            return;
+          }
+          el.style.display = "";
+          el.textContent = value;
+        };
+
+        setField("productName", product.name || "");
+        setField("productCategory", product.category || "");
+        setField("productTitle", product.name || "");
+        setField("productDescription", product.description || "");
+        setField("productPrice", product.price ?? "");
 
         const imageContainer = document.getElementById("productImages");
         const sliderContainer = document.getElementById("productSlider");
         imageContainer.innerHTML = "";
         sliderContainer.innerHTML = "";
+
+        if (!images.length) {
+          imageContainer.style.display = "none";
+          const slider = document.querySelector(".product-details-slider");
+          if (slider) slider.style.display = "none";
+        }
 
         images.forEach((src) => {
           imageContainer.innerHTML += `

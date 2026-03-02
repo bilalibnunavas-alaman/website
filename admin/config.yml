@@ -167,17 +167,111 @@ collections:
                 widget: "list"
                 field: { label: "Image", name: "image", widget: "image" }
 
-  - name: "shop_settings"
-    label: "Shop Settings"
+  - name: "tabs_settings"
+    label: "Tabs Settings"
     files:
-      - label: "Shop Tabs"
-        name: "shop_tabs"
-        file: "data/shop_tabs.json"
+      - label: "All Page Tabs"
+        name: "page_tabs"
+        file: "data/page_tabs.json"
         format: "json"
         fields:
-          - label: "Tabs"
+          - label: "Tabs By Page"
             name: "tabs"
-            widget: "list"
-            min: 6
-            max: 6
-            field: { label: "Tab Label", name: "label", widget: "string" }
+            widget: "object"
+            fields:
+              - label: "Shop Tabs"
+                name: "shop"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Book Tabs"
+                name: "book"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Abaya Tabs"
+                name: "abaya"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Hat Tabs"
+                name: "hat"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Hijab Tabs"
+                name: "hijab"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Islamic Accessories Tabs"
+                name: "islamic_accessories"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Jubba Tabs"
+                name: "jubba"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Kandura Tabs"
+                name: "kandura"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Koil Tabs"
+                name: "koil"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Maxi Tabs"
+                name: "maxi"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Mundu Tabs"
+                name: "mundu"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Pant Tabs"
+                name: "pant"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Pants Tabs"
+                name: "pants"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Perfumes Tabs"
+                name: "perfumes"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Shirt Tabs"
+                name: "shirt"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }
+              - label: "Top Tabs"
+                name: "top"
+                widget: "list"
+                min: 6
+                max: 6
+                field: { label: "Tab Label", name: "label", widget: "string" }

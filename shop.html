@@ -490,20 +490,21 @@
 
   <script>
     const pageKey = window.location.pathname.split('/').pop().replace('.html', '').toLowerCase();
-    const applyShopTabs = (tabData) => {
-      const rawTabs = Array.isArray(tabData?.tabs) ? tabData.tabs : [];
-      const labels = rawTabs.map((item) => (typeof item === "string" ? item : item?.label)).filter(Boolean);
+
+    const applyPageTabs = (tabData) => {
+      const labels = Array.isArray(tabData?.tabs?.[pageKey]) ? tabData.tabs[pageKey] : [];
+      if (!labels.length) return;
       const tabNodes = document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-link > div');
       labels.forEach((label, index) => {
-        if (tabNodes[index]) tabNodes[index].textContent = label;
+        if (tabNodes[index] && label) tabNodes[index].textContent = label;
       });
     };
 
-    fetch('data/shop_tabs.json')
+    fetch('data/page_tabs.json')
       .then((res) => res.json())
-      .then((data) => applyShopTabs(data))
+      .then((data) => applyPageTabs(data))
       .catch(() => {
-        // Keep existing hardcoded labels as fallback.
+        // Keep static tab labels if CMS tabs config is unavailable.
       });
 
     const matchesPage = (product) => {
@@ -546,28 +547,30 @@
 
         products.forEach((p) => {
           const productId = p.id || p.slug || '';
-          const image = Array.isArray(p.images) && p.images.length ? p.images[0] : (p.image || 'images/uploads/placeholder.png');
-          const price = p.price ?? '';
+          const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
+          const image = Array.isArray(p.images) && p.images.length ? p.images[0] : (p.image || '');
+          const imageHtml = image ? '<img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">' : '';
           const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
+          const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
+          const priceHtml = hasPrice
+            ? '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + p.price + '</div></div></div>'
+            : '';
+          const detailsUrl = productId ? 'product_detail.html?id=' + productId : '#';
 
           const cardHtml = [
             '<div role="listitem" class="product-item">',
             '  <div class="product-post">',
-            '    <a href="product_detail.html?id=' + productId + '" class="product-image-block w-inline-block">',
-            '      <img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">',
+            '    <a href="' + detailsUrl + '" class="product-image-block w-inline-block">',
+            '      ' + imageHtml,
             '    </a>',
             '    <div class="product-content-block">',
-                 tagHtml,
+            '      ' + tagHtml,
             '      <div class="product-card">',
             '        <div class="product-text-block">',
-            '          <div class="product-category">' + (p.category || '') + '</div>',
-            '          <a href="product_detail.html?id=' + productId + '" class="product-name">' + (p.name || '') + '</a>',
+            '          ' + categoryHtml,
+            '          <a href="' + detailsUrl + '" class="product-name">' + (p.name || '') + '</a>',
             '        </div>',
-            '        <div class="product-price-block">',
-            '          <div class="product-price">',
-            '            <div class="product-original-price">' + price + '</div>',
-            '          </div>',
-            '        </div>',
+            '        ' + priceHtml,
             '      </div>',
             '    </div>',
             '  </div>',
