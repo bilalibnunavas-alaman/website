@@ -1,20 +1,132 @@
 {
   "tabs": {
-    "abaya": ["All", "Madras abaya", "Derass abaya", "Quran", "Islamic abaya", "General abaya"],
-    "book": ["All", "Madras Books", "Derass Books", "Quran", "Islamic Books", "General Books"],
-    "hat": ["All", "Madras hat", "Derass hat", "Quran", "Islamic hat", "General hat"],
-    "hijab": ["All", "Madras hijabs", "Derass hijabs", "Quran", "Islamic hijabs", "General hijabs"],
-    "islamic_accessories": ["All", "Madras islamic accessories", "Derass islamic accessories", "Quran", "Islamic islamic accessories", "General islamic accessories"],
-    "jubba": ["All", "Madras jubba", "Derass jubba", "Quran", "Islamic jubba", "General jubba"],
-    "kandura": ["All", "Madras kandura", "Derass kandura", "Quran", "Islamic kandura", "General kandura"],
-    "koil": ["All", "Madras koil", "Derass koil", "Quran", "Islamic koil", "General koil"],
-    "maxi": ["All", "Madras maxi", "Derass maxi", "Quran", "Islamic maxi", "General maxi"],
-    "mundu": ["All", "Madras mundu", "Derass mundu", "Quran", "Islamic mundu", "General mundu"],
-    "pant": ["All", "Madras pant", "Derass pant", "Quran", "Islamic pant", "General pant"],
-    "pants": ["All", "Madras pant", "Derass pant", "Quran", "Islamic pant", "General pant"],
-    "perfumes": ["All", "Madras perfumes", "Derass perfumes", "Quran", "Islamic perfumes", "General perfumes"],
-    "shirt": ["All", "Madras shirt", "Derass shirt", "Quran", "Islamic shirt", "General shirt"],
-    "shop": ["All", "Madras Books", "Derass Books", "Quran", "Islamic Books", "General Books"],
-    "top": ["All", "Madras top", "Derass top", "Quran", "Islamic top", "General top"]
+    "maxi": [
+      "All",
+      "Madras maxi",
+      "Derass maxi",
+      "Quran",
+      "Islamic maxi",
+      "General maxi"
+    ],
+    "koil": [
+      "All",
+      "Madras koil",
+      "Derass koil",
+      "Quran",
+      "Islamic koil",
+      "General koil"
+    ],
+    "abaya": [
+      "All",
+      "Madras abaya",
+      "Derass abaya",
+      "Quran",
+      "Islamic abaya",
+      "General abaya"
+    ],
+    "book": [
+      "All",
+      "Madras Books",
+      "Derass Books",
+      "Quran",
+      "Islamic Books",
+      "General Books"
+    ],
+    "hijab": [
+      "All",
+      "Madras hijabs",
+      "Derass hijabs",
+      "Quran",
+      "Islamic hijabs",
+      "General hijabs"
+    ],
+    "perfumes": [
+      "All",
+      "Madras perfumes",
+      "Derass perfumes",
+      "Quran",
+      "Islamic perfumes",
+      "General perfumes"
+    ],
+    "top": [
+      "All",
+      "Madras top",
+      "Derass top",
+      "Quran",
+      "Islamic top",
+      "General top"
+    ],
+    "shirt": [
+      "All",
+      "Madras shirt",
+      "Derass shirt",
+      "Quran",
+      "Islamic shirt",
+      "General shirt"
+    ],
+    "shop": [
+      "All",
+      "Madras Books",
+      "Derass Books",
+      "Quran",
+      "Islamic Books",
+      "General Books"
+    ],
+    "jubba": [
+      "All",
+      "Madras jubba",
+      "Derass jubba",
+      "Quran",
+      "Islamic jubba",
+      "General jubba"
+    ],
+    "mundu": [
+      "All",
+      "Madras mundu",
+      "Derass mundu",
+      "Quran",
+      "Islamic mundu",
+      "General mundu"
+    ],
+    "pant": [
+      "All",
+      "Madras pant",
+      "Derass pant",
+      "Quran",
+      "Islamic pant",
+      "General pant"
+    ],
+    "kandura": [
+      "All",
+      "Madras kandura",
+      "Derass kandura",
+      "Quran",
+      "Islamic kandura",
+      "General kandura"
+    ],
+    "islamic_accessories": [
+      "All",
+      "Madras Accessories",
+      "Derass Accessories",
+      "Quran Accessories",
+      "General Accessories",
+      "Accessories"
+    ],
+    "hat": [
+      "All",
+      "Madras hat",
+      "Derass hat",
+      "Quran",
+      "Islamic hat",
+      "General hat"
+    ],
+    "pants": [
+      "All",
+      "Madras pant",
+      "Derass pant",
+      "Quran",
+      "Islamic pant",
+      "General pant"
+    ]
   }
 }
