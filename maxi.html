@@ -490,22 +490,6 @@
   <script>
     const pageKey = window.location.pathname.split('/').pop().replace('.html', '').toLowerCase();
 
-    const applyPageTabs = (tabData) => {
-      const labels = Array.isArray(tabData?.tabs?.[pageKey]) ? tabData.tabs[pageKey] : [];
-      if (!labels.length) return;
-      const tabNodes = document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-link > div');
-      labels.forEach((label, index) => {
-        if (tabNodes[index] && label) tabNodes[index].textContent = label;
-      });
-    };
-
-    fetch('data/page_tabs.json')
-      .then((res) => res.json())
-      .then((data) => applyPageTabs(data))
-      .catch(() => {
-        // Keep static tab labels if CMS tabs config is unavailable.
-      });
-
     const matchesPage = (product) => {
       const category = String(product.category || '').toLowerCase();
       const subCategory = String(product.sub_category || '').toLowerCase();
@@ -534,52 +518,120 @@
       return rules[pageKey] ? rules[pageKey]() : true;
     };
 
+    const getTabCategory = (product) => {
+      const value = product.sub_category || product.category || '';
+      return String(value).trim();
+    };
+
+    const toLabel = (value) => {
+      return String(value || '')
+        .replace(/[_-]+/g, ' ')
+        .replace(/s+/g, ' ')
+        .trim()
+        .replace(/w/g, (c) => c.toUpperCase());
+    };
+
+    const buildCard = (p) => {
+      const productId = p.id || p.slug || '';
+      const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
+      const image = Array.isArray(p.images) && p.images.length
+        ? (typeof p.images[0] === 'string' ? p.images[0] : (p.images[0]?.image || ''))
+        : (typeof p.image === 'string' ? p.image : (p.image?.image || ''));
+      const imageHtml = image ? '<img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">' : '';
+      const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
+      const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
+      const priceHtml = hasPrice
+        ? '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + p.price + '</div></div></div>'
+        : '';
+      const detailsUrl = productId ? 'product_detail.html?id=' + productId : '#';
+
+      return [
+        '<div role="listitem" class="product-item">',
+        '  <div class="product-post">',
+        '    <a href="' + detailsUrl + '" class="product-image-block w-inline-block">',
+        '      ' + imageHtml,
+        '    </a>',
+        '    <div class="product-content-block">',
+        '      ' + tagHtml,
+        '      <div class="product-card">',
+        '        <div class="product-text-block">',
+        '          ' + categoryHtml,
+        '          <a href="' + detailsUrl + '" class="product-name">' + (p.name || '') + '</a>',
+        '        </div>',
+        '        ' + priceHtml,
+        '      </div>',
+        '    </div>',
+        '  </div>',
+        '</div>'
+      ].join('\n');
+    };
+
+    const renderProducts = (products) => {
+      const list = document.getElementById('productList');
+      if (!list) return;
+      list.innerHTML = '';
+      products.forEach((p) => {
+        list.innerHTML += buildCard(p);
+      });
+    };
+
+    const buildCategoryDropdown = (products) => {
+      const menu = document.querySelector('.shop-tabs.w-tabs .shop-tabs-menu.w-tab-menu');
+      if (!menu) return;
+
+      const categories = Array.from(new Set(products.map(getTabCategory).filter(Boolean)));
+      menu.innerHTML = '';
+
+      const wrapper = document.createElement('div');
+      wrapper.style.display = 'flex';
+      wrapper.style.alignItems = 'center';
+      wrapper.style.gap = '12px';
+
+      const label = document.createElement('div');
+      label.className = 'shop-tab-link w-inline-block';
+      label.style.cursor = 'default';
+      label.style.padding = '8px 0';
+      label.textContent = 'Category';
+
+      const select = document.createElement('select');
+      select.id = 'categoryFilter';
+      select.className = 'w-select';
+      select.style.maxWidth = '260px';
+
+      const allOption = document.createElement('option');
+      allOption.value = 'all';
+      allOption.textContent = 'All';
+      select.appendChild(allOption);
+
+      categories.forEach((cat) => {
+        const option = document.createElement('option');
+        option.value = cat;
+        option.textContent = toLabel(cat);
+        select.appendChild(option);
+      });
+
+      wrapper.appendChild(label);
+      wrapper.appendChild(select);
+      menu.appendChild(wrapper);
+
+      document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-pane').forEach((pane, idx) => {
+        pane.style.display = idx === 0 ? '' : 'none';
+      });
+
+      select.addEventListener('change', () => {
+        const value = select.value;
+        const filtered = value === 'all' ? products : products.filter((p) => getTabCategory(p) === value);
+        renderProducts(filtered);
+      });
+    };
+
     fetch('data/products.json')
       .then((res) => res.json())
       .then((data) => {
         const source = Array.isArray(data) ? data : (Array.isArray(data.products) ? data.products : []);
         const products = source.filter(matchesPage);
-        const list = document.getElementById('productList');
-        if (!list) return;
-
-        list.innerHTML = '';
-
-        products.forEach((p) => {
-          const productId = p.id || p.slug || '';
-          const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
-          const image = Array.isArray(p.images) && p.images.length
-            ? (typeof p.images[0] === 'string' ? p.images[0] : (p.images[0]?.image || ''))
-            : (typeof p.image === 'string' ? p.image : (p.image?.image || ''));
-          const imageHtml = image ? '<img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">' : '';
-          const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
-          const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
-          const priceHtml = hasPrice
-            ? '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + p.price + '</div></div></div>'
-            : '';
-          const detailsUrl = productId ? 'product_detail.html?id=' + productId : '#';
-
-          const cardHtml = [
-            '<div role="listitem" class="product-item">',
-            '  <div class="product-post">',
-            '    <a href="' + detailsUrl + '" class="product-image-block w-inline-block">',
-            '      ' + imageHtml,
-            '    </a>',
-            '    <div class="product-content-block">',
-            '      ' + tagHtml,
-            '      <div class="product-card">',
-            '        <div class="product-text-block">',
-            '          ' + categoryHtml,
-            '          <a href="' + detailsUrl + '" class="product-name">' + (p.name || '') + '</a>',
-            '        </div>',
-            '        ' + priceHtml,
-            '      </div>',
-            '    </div>',
-            '  </div>',
-            '</div>'
-          ].join('\n');
-
-          list.innerHTML += cardHtml;
-        });
+        buildCategoryDropdown(products);
+        renderProducts(products);
       })
       .catch((error) => {
         console.error('Failed to load products:', error);
