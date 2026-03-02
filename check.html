@@ -2563,5 +2563,10 @@
       toggleBtn();
     })();
   </script>
+  <script>
+    if (window.location.pathname !== "/") {
+      window.history.replaceState({}, "", "/");
+    }
+  </script>
     </body>
 </html>
