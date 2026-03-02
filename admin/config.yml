@@ -145,6 +145,8 @@ collections:
         name: "products_data"
         file: "data/products.json"
         format: "json"
+        media_folder: "/images/uploads"
+        public_folder: "/images/uploads"
         fields:
           - label: "Products"
             name: "products"
