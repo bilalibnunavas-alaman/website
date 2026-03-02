@@ -533,7 +533,8 @@
 
     const buildCard = (p) => {
       const productId = p.id || p.slug || '';
-      const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
+      const displayName = (p.name !== undefined && p.name !== null && String(p.name).trim() !== '') ? String(p.name).trim() : 'Product';
+      const displayPrice = (p.price !== undefined && p.price !== null && String(p.price).trim() !== '') ? String(p.price).trim() : 'Contact for price';
       const imageList = Array.isArray(p.images) && p.images.length
         ? p.images.map((item) => (typeof item === 'string' ? item : (item?.image || ''))).filter(Boolean)
         : (() => {
@@ -543,13 +544,11 @@
       const primaryImage = imageList[0] || '';
       const hoverImage = imageList[1] || primaryImage;
       const imageHtml = primaryImage
-        ? '<img src="' + primaryImage + '" data-primary-src="' + primaryImage + '" data-hover-src="' + hoverImage + '" class="product-image js-hover-image" alt="' + (p.name || '') + '">'
+        ? '<img src="' + primaryImage + '" data-primary-src="' + primaryImage + '" data-hover-src="' + hoverImage + '" class="product-image js-hover-image" alt="' + displayName + '">'
         : '';
       const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
       const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
-      const priceHtml = hasPrice
-        ? '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + p.price + '</div></div></div>'
-        : '';
+      const priceHtml = '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + displayPrice + '</div></div></div>';
       const detailsUrl = productId ? 'product_detail.html?id=' + productId : '#';
 
       return [
@@ -563,7 +562,7 @@
         '      <div class="product-card">',
         '        <div class="product-text-block">',
         '          ' + categoryHtml,
-        '          <a href="' + detailsUrl + '" class="product-name">' + (p.name || '') + '</a>',
+        '          <a href="' + detailsUrl + '" class="product-name">' + displayName + '</a>',
         '        </div>',
         '        ' + priceHtml,
         '      </div>',
