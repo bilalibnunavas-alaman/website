@@ -7,6 +7,134 @@ public_folder: "/images/uploads"
 publish_mode: simple
 
 collections:
+  - name: "site_pages"
+    label: "Site Pages"
+    files:
+      - label: "Home"
+        name: "index"
+        file: "index.html"
+        fields:
+          - label: "Page HTML"
+            name: "body"
+            widget: "code"
+            default_language: "html"
+            output_code_only: true
+      - label: "About"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Shop"
+        name: "shop"
+        file: "shop.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Contact"
+        name: "contact"
+        file: "contact.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Blog"
+        name: "blog"
+        file: "blog.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Product Detail"
+        name: "product_detail"
+        file: "product_detail.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Abaya"
+        name: "abaya"
+        file: "abaya.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Book"
+        name: "book"
+        file: "book.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Hat"
+        name: "hat"
+        file: "hat.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Hijab"
+        name: "hijab"
+        file: "hijab.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Islamic Accessories"
+        name: "islamic_accessories"
+        file: "islamic_accessories.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Jubba"
+        name: "jubba"
+        file: "jubba.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Kandura"
+        name: "kandura"
+        file: "kandura.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Koil"
+        name: "koil"
+        file: "koil.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Ladieswear"
+        name: "ladieswear"
+        file: "ladieswear.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Maxi"
+        name: "maxi"
+        file: "maxi.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Menswears"
+        name: "menswears"
+        file: "menswears.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Mundu"
+        name: "mundu"
+        file: "mundu.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Pant"
+        name: "pant"
+        file: "pant.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Pants"
+        name: "pants"
+        file: "pants.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Perfumes"
+        name: "perfumes"
+        file: "perfumes.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Shirt"
+        name: "shirt"
+        file: "shirt.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "Top"
+        name: "top"
+        file: "top.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+      - label: "404"
+        name: "not_found"
+        file: "404.html"
+        fields:
+          - { label: "Page HTML", name: "body", widget: "code", default_language: "html", output_code_only: true }
+
   - name: "products"
     label: "Products"
     files:
