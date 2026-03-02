@@ -786,8 +786,11 @@ function sendWhatsApp() {
         }
 
         const images = Array.isArray(product.images) && product.images.length
-          ? product.images
-          : (product.image ? [product.image] : []);
+          ? product.images.map((item) => typeof item === "string" ? item : (item?.image || "")).filter(Boolean)
+          : (() => {
+              const fallbackImage = typeof product.image === "string" ? product.image : (product.image?.image || "");
+              return fallbackImage ? [fallbackImage] : [];
+            })();
 
         const setField = (id, value) => {
           const el = document.getElementById(id);

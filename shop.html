@@ -548,7 +548,9 @@
         products.forEach((p) => {
           const productId = p.id || p.slug || '';
           const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
-          const image = Array.isArray(p.images) && p.images.length ? p.images[0] : (p.image || '');
+          const image = Array.isArray(p.images) && p.images.length
+            ? (typeof p.images[0] === 'string' ? p.images[0] : (p.images[0]?.image || ''))
+            : (typeof p.image === 'string' ? p.image : (p.image?.image || ''));
           const imageHtml = image ? '<img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">' : '';
           const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
           const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
