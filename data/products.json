@@ -1071,6 +1071,18 @@
         "images/dummy-accessory-dua-1.png",
         "images/dummy-accessory-dua-2.png"
       ]
+    },
+    {
+      "id": "Musalla-brown",
+      "name": "Musalla",
+      "description": "Prayer Mat 44x28 inch Musalla Janamaz for Namaz Muslim Blue 310894\nBrand\tADIRNY\nSize\t2'4\" x 3'7\" (Rectangular)\nMaterial\tPolyester Blend\nWeave Type\tTufted\nItem Weight\t0.65 Kilograms\nPile Height\tHigh Pile\nConstruction Type\tMachine Made\nBack Material Type\tCotton\nColour\tBlue\nIndoor/Outdoor Usage\tIndoor",
+      "category": "General Accessories",
+      "sub_category": "Islamic Accessories",
+      "style": "broun color",
+      "price": "₹ 495 ",
+      "images": [
+        "https://i.pinimg.com/736x/2c/5d/22/2c5d2272edc3f71e96da2046a6c9821d.jpg"
+      ]
     }
   ]
 }
