@@ -166,3 +166,18 @@ collections:
                 name: "images"
                 widget: "list"
                 field: { label: "Image", name: "image", widget: "image" }
+
+  - name: "shop_settings"
+    label: "Shop Settings"
+    files:
+      - label: "Shop Tabs"
+        name: "shop_tabs"
+        file: "data/shop_tabs.json"
+        format: "json"
+        fields:
+          - label: "Tabs"
+            name: "tabs"
+            widget: "list"
+            min: 6
+            max: 6
+            field: { label: "Tab Label", name: "label", widget: "string" }

@@ -490,6 +490,21 @@
 
   <script>
     const pageKey = window.location.pathname.split('/').pop().replace('.html', '').toLowerCase();
+    const applyShopTabs = (tabData) => {
+      const rawTabs = Array.isArray(tabData?.tabs) ? tabData.tabs : [];
+      const labels = rawTabs.map((item) => (typeof item === "string" ? item : item?.label)).filter(Boolean);
+      const tabNodes = document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-link > div');
+      labels.forEach((label, index) => {
+        if (tabNodes[index]) tabNodes[index].textContent = label;
+      });
+    };
+
+    fetch('data/shop_tabs.json')
+      .then((res) => res.json())
+      .then((data) => applyShopTabs(data))
+      .catch(() => {
+        // Keep existing hardcoded labels as fallback.
+      });
 
     const matchesPage = (product) => {
       const category = String(product.category || '').toLowerCase();
