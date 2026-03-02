@@ -531,6 +531,19 @@
       return String(product.sub_category || product.type || product.style || product.category || '').trim();
     };
 
+    const ensureCardStyles = () => {
+      if (document.getElementById('cmsProductCardStyles')) return;
+      const style = document.createElement('style');
+      style.id = 'cmsProductCardStyles';
+      style.textContent = [
+        '.product-post { overflow: visible; }',
+        '.product-content-block { position: static; inset: auto; }',
+        '.product-card { opacity: 1; display: flex; position: static; bottom: auto; right: auto; max-width: none; padding: 0; border-radius: 0; background: transparent; grid-column-gap: 10px; grid-row-gap: 10px; }',
+        '.product-price-block { margin-top: 4px; }'
+      ].join('\n');
+      document.head.appendChild(style);
+    };
+
     const buildCard = (p) => {
       const productId = p.id || p.slug || '';
       const displayName = (p.name !== undefined && p.name !== null && String(p.name).trim() !== '') ? String(p.name).trim() : 'Product';
@@ -640,6 +653,8 @@
         renderIntoList(pane.querySelector('.product-list'), items);
       }
     };
+
+    ensureCardStyles();
 
     fetch('data/products.json')
       .then((res) => res.json())
