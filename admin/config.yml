@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://alaman.in
+display_url: https://alaman.in
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 publish_mode: simple
