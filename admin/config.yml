@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+publish_mode: simple
+
+collections:
+  - name: "products"
+    label: "Products"
+    files:
+      - label: "Products Data"
+        name: "products_data"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.id}})"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Sub Category", name: "sub_category", widget: "string", required: false }
+              - { label: "Type", name: "type", widget: "string", required: false }
+              - { label: "Style", name: "style", widget: "string", required: false }
+              - { label: "Gender", name: "gender", widget: "string", required: false }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                field: { label: "Image", name: "image", widget: "image" }
