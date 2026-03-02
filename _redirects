@@ -1,0 +1,5 @@
+/admin /admin/ 301
+/admin/login /admin/ 302
+/admin/* /admin/index.html 200
+/index.html/admin /admin/ 301
+/index.html/admin/* /admin/:splat 301
