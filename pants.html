@@ -533,10 +533,17 @@
     const buildCard = (p) => {
       const productId = p.id || p.slug || '';
       const hasPrice = p.price !== undefined && p.price !== null && String(p.price).trim() !== '';
-      const image = Array.isArray(p.images) && p.images.length
-        ? (typeof p.images[0] === 'string' ? p.images[0] : (p.images[0]?.image || ''))
-        : (typeof p.image === 'string' ? p.image : (p.image?.image || ''));
-      const imageHtml = image ? '<img src="' + image + '" class="product-image" alt="' + (p.name || '') + '">' : '';
+      const imageList = Array.isArray(p.images) && p.images.length
+        ? p.images.map((item) => (typeof item === 'string' ? item : (item?.image || ''))).filter(Boolean)
+        : (() => {
+            const fallbackImage = typeof p.image === 'string' ? p.image : (p.image?.image || '');
+            return fallbackImage ? [fallbackImage] : [];
+          })();
+      const primaryImage = imageList[0] || '';
+      const hoverImage = imageList[1] || primaryImage;
+      const imageHtml = primaryImage
+        ? '<img src="' + primaryImage + '" data-primary-src="' + primaryImage + '" data-hover-src="' + hoverImage + '" class="product-image js-hover-image" alt="' + (p.name || '') + '">'
+        : '';
       const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
       const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
       const priceHtml = hasPrice
@@ -565,12 +572,28 @@
       ].join('\n');
     };
 
+    const bindHoverSwap = (rootEl) => {
+      if (!rootEl) return;
+      rootEl.querySelectorAll('.js-hover-image').forEach((img) => {
+        const primary = img.dataset.primarySrc || '';
+        const hover = img.dataset.hoverSrc || '';
+        if (!primary || !hover || primary === hover) return;
+        img.addEventListener('mouseenter', () => {
+          img.src = hover;
+        });
+        img.addEventListener('mouseleave', () => {
+          img.src = primary;
+        });
+      });
+    };
+
     const renderIntoList = (listEl, products) => {
       if (!listEl) return;
       listEl.innerHTML = '';
       products.forEach((p) => {
         listEl.innerHTML += buildCard(p);
       });
+      bindHoverSwap(listEl);
     };
 
     const renderTabs = (products) => {
