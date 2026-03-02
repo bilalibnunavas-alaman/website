@@ -490,45 +490,44 @@
   <script>
     const pageKey = window.location.pathname.split('/').pop().replace('.html', '').toLowerCase();
 
-    const matchesPage = (product) => {
-      const category = String(product.category || '').toLowerCase();
-      const subCategory = String(product.sub_category || '').toLowerCase();
-      const type = String(product.type || '').toLowerCase();
-      const name = String(product.name || '').toLowerCase();
+    const normalize = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const toLabel = (value) => String(value || '')
+      .replace(/[_-]+/g, ' ')
+      .replace(/s+/g, ' ')
+      .trim()
+      .replace(/w/g, (c) => c.toUpperCase());
 
-      const rules = {
-        shop: () => true,
-        book: () => category === 'books',
-        perfumes: () => category === 'perfumes',
-        islamic_accessories: () => category === 'islamic_accessories',
-        hijab: () => category === 'hijabs' || subCategory.includes('hijab') || name.includes('hijab'),
-        hat: () => subCategory === 'hat' || type.includes('cap') || type.includes('topi') || category === 'hats_caps',
-        jubba: () => subCategory === 'jubba' || name.includes('jubba'),
-        kandura: () => subCategory === 'kanthoora' || subCategory === 'kandura' || name.includes('kandura') || name.includes('kanthoora'),
-        koil: () => subCategory === 'oil' || subCategory === 'koil' || name.includes('oil') || name.includes('koil'),
-        mundu: () => subCategory === 'mundu' || name.includes('mundu'),
-        shirt: () => subCategory === 'shirts' || name.includes('shirt'),
-        pant: () => type.includes('pant') || name.includes('pant'),
-        pants: () => type.includes('pant') || name.includes('pant'),
-        abaya: () => name.includes('abaya') || subCategory.includes('abaya') || category.includes('abaya'),
-        maxi: () => name.includes('maxi') || subCategory.includes('maxi') || category.includes('maxi'),
-        top: () => name.includes('top') || subCategory.includes('top') || category.includes('top')
+    const matchAny = (text, terms) => terms.some((term) => text.includes(term));
+
+    const matchesPage = (product) => {
+      if (pageKey === 'shop') return true;
+
+      const text = normalize([product.category, product.sub_category, product.type, product.style, product.name].filter(Boolean).join(' '));
+
+      const pageTerms = {
+        abaya: ['abaya'],
+        book: ['book', 'books', 'quran', 'madras', 'derass'],
+        hat: ['hat', 'cap', 'topi', 'kufi'],
+        hijab: ['hijab'],
+        islamic_accessories: ['islamic accessories', 'accessories', 'tasbeeh', 'miswak', 'qibla', 'prayer mat'],
+        jubba: ['jubba'],
+        kandura: ['kandura', 'kandora', 'kanthoora', 'thobe'],
+        koil: ['koil', 'oil'],
+        maxi: ['maxi'],
+        mundu: ['mundu', 'lunki', 'kayli'],
+        pant: ['pant', 'pants'],
+        pants: ['pant', 'pants'],
+        perfumes: ['perfume', 'attar', 'musk', 'oud', 'roll on', 'spray'],
+        shirt: ['shirt'],
+        top: ['top']
       };
 
-      return rules[pageKey] ? rules[pageKey]() : true;
+      const terms = pageTerms[pageKey] || [pageKey];
+      return matchAny(text, terms);
     };
 
-    const getTabCategory = (product) => {
-      const value = product.sub_category || product.category || '';
-      return String(value).trim();
-    };
-
-    const toLabel = (value) => {
-      return String(value || '')
-        .replace(/[_-]+/g, ' ')
-        .replace(/s+/g, ' ')
-        .trim()
-        .replace(/w/g, (c) => c.toUpperCase());
+    const getGroupValue = (product) => {
+      return String(product.sub_category || product.type || product.style || product.category || '').trim();
     };
 
     const buildCard = (p) => {
@@ -566,63 +565,57 @@
       ].join('\n');
     };
 
-    const renderProducts = (products) => {
-      const list = document.getElementById('productList');
-      if (!list) return;
-      list.innerHTML = '';
+    const renderIntoList = (listEl, products) => {
+      if (!listEl) return;
+      listEl.innerHTML = '';
       products.forEach((p) => {
-        list.innerHTML += buildCard(p);
+        listEl.innerHTML += buildCard(p);
       });
     };
 
-    const buildCategoryDropdown = (products) => {
-      const menu = document.querySelector('.shop-tabs.w-tabs .shop-tabs-menu.w-tab-menu');
-      if (!menu) return;
+    const renderTabs = (products) => {
+      const tabLinks = Array.from(document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-link'));
+      const tabPanes = Array.from(document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-pane'));
+      if (!tabLinks.length || !tabPanes.length) {
+        renderIntoList(document.getElementById('productList'), products);
+        return;
+      }
 
-      const categories = Array.from(new Set(products.map(getTabCategory).filter(Boolean)));
-      menu.innerHTML = '';
-
-      const wrapper = document.createElement('div');
-      wrapper.style.display = 'flex';
-      wrapper.style.alignItems = 'center';
-      wrapper.style.gap = '12px';
-
-      const label = document.createElement('div');
-      label.className = 'shop-tab-link w-inline-block';
-      label.style.cursor = 'default';
-      label.style.padding = '8px 0';
-      label.textContent = 'Category';
-
-      const select = document.createElement('select');
-      select.id = 'categoryFilter';
-      select.className = 'w-select';
-      select.style.maxWidth = '260px';
-
-      const allOption = document.createElement('option');
-      allOption.value = 'all';
-      allOption.textContent = 'All';
-      select.appendChild(allOption);
-
-      categories.forEach((cat) => {
-        const option = document.createElement('option');
-        option.value = cat;
-        option.textContent = toLabel(cat);
-        select.appendChild(option);
+      const groupsMap = new Map();
+      products.forEach((p) => {
+        const key = getGroupValue(p);
+        if (!key) return;
+        if (!groupsMap.has(key)) groupsMap.set(key, []);
+        groupsMap.get(key).push(p);
       });
 
-      wrapper.appendChild(label);
-      wrapper.appendChild(select);
-      menu.appendChild(wrapper);
+      const groups = Array.from(groupsMap.entries()).slice(0, 5);
 
-      document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-pane').forEach((pane, idx) => {
-        pane.style.display = idx === 0 ? '' : 'none';
-      });
+      // Tab 1: All
+      const tab1Label = tabLinks[0]?.querySelector('div');
+      if (tab1Label) tab1Label.textContent = 'All';
+      renderIntoList(tabPanes[0]?.querySelector('.product-list'), products);
 
-      select.addEventListener('change', () => {
-        const value = select.value;
-        const filtered = value === 'all' ? products : products.filter((p) => getTabCategory(p) === value);
-        renderProducts(filtered);
-      });
+      // Tabs 2-6: Dynamic groups from sub_category/type/style/category
+      for (let i = 1; i < 6; i++) {
+        const link = tabLinks[i];
+        const pane = tabPanes[i];
+        if (!link || !pane) continue;
+
+        const group = groups[i - 1];
+        if (!group) {
+          link.style.display = 'none';
+          pane.style.display = 'none';
+          continue;
+        }
+
+        const [groupKey, items] = group;
+        link.style.display = '';
+        pane.style.display = '';
+        const label = link.querySelector('div');
+        if (label) label.textContent = toLabel(groupKey);
+        renderIntoList(pane.querySelector('.product-list'), items);
+      }
     };
 
     fetch('data/products.json')
@@ -630,8 +623,7 @@
       .then((data) => {
         const source = Array.isArray(data) ? data : (Array.isArray(data.products) ? data.products : []);
         const products = source.filter(matchesPage);
-        buildCategoryDropdown(products);
-        renderProducts(products);
+        renderTabs(products);
       })
       .catch((error) => {
         console.error('Failed to load products:', error);
