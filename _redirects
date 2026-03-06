@@ -1,12 +1,3 @@
-http://www.alaman.in/:page.html https://alaman.in/:page 301!
-https://www.alaman.in/:page.html https://alaman.in/:page 301!
-http://alaman.in/:page.html https://alaman.in/:page 301!
-https://alaman.in/:page.html https://alaman.in/:page 301!
-http://www.alaman.in/category/:page.html https://alaman.in/category/:page 301!
-https://www.alaman.in/category/:page.html https://alaman.in/category/:page 301!
-http://alaman.in/category/:page.html https://alaman.in/category/:page 301!
-https://alaman.in/category/:page.html https://alaman.in/category/:page 301!
-
 http://alaman.in/* https://alaman.in/:splat 301!
 http://www.alaman.in/* https://alaman.in/:splat 301!
 https://www.alaman.in/* https://alaman.in/:splat 301!
@@ -22,6 +13,8 @@ https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
 
 # Clean URLs
 /index.html / 301!
-/*.html /:splat 301!
+/category/:page.html /category/:page 301!
+/:page.html /:page 301!
 / /index.html 200
 /:splat /:splat.html 200
+/category/:page /category/:page.html 200
