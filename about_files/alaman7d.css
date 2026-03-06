@@ -8184,7 +8184,10 @@ p {
     .header-nav-menu {
         border-radius: var(--_border-radius---extra-large);
         background-color: var(--white);
-        width: 100%
+        width: 100%;
+        max-height: calc(100dvh - 48px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch
     }
 
     .header-nav-wrap {
@@ -8193,7 +8196,11 @@ p {
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 100%
+        height: auto
+    }
+
+    .header-nav-wrap>.header-nav-link[style] {
+        margin-right: 0 !important
     }
 
     .header-mega-block {
@@ -8980,8 +8987,8 @@ p {
     .header-mega-block.header-shop-block {
         grid-column-gap: 30px;
         grid-row-gap: 30px;
-        height: 400px;
-        overflow: auto
+        height: auto;
+        overflow: visible
     }
 
     .header-mega-watermark {
