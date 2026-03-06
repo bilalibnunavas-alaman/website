@@ -4,32 +4,6 @@
     class="w-mod-js wf-montserrat-n1-active wf-montserrat-i1-active wf-montserrat-n2-active wf-montserrat-i2-active wf-montserrat-n3-active wf-montserrat-i3-active wf-montserrat-n4-active wf-montserrat-i4-active wf-montserrat-n5-active wf-montserrat-i5-active wf-montserrat-n6-active wf-montserrat-i6-active wf-montserrat-n7-active wf-montserrat-i7-active wf-montserrat-n8-active wf-montserrat-i8-active wf-montserrat-n9-active wf-montserrat-i9-active wf-ballet-n4-active wf-active w-mod-ix">
 
 <head>
-  <script id="route-content">
-(function () {
-  var path = (window.location.pathname.replace(/\/+$/, "") || "/").toLowerCase();
-  if (path === "/" || path === "/index" || path === "/index.html") return;
-
-  function formatSlug(slug) {
-    return slug
-      .replace(/[_-]+/g, " ")
-      .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-  }
-
-  var content = "";
-  var categoryMatch = path.match(/^\/category\/([^/.]+)(?:\.html)?$/);
-  if (categoryMatch) {
-    content = formatSlug(categoryMatch[1]) + " Category Content";
-  } else {
-    var pageMatch = path.match(/^\/([^/.]+)(?:\.html)?$/);
-    if (pageMatch) content = formatSlug(pageMatch[1]) + " Page Content";
-  }
-
-  if (!content) return;
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.innerHTML = content;
-  });
-})();
-</script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <base href="/">
     <style>

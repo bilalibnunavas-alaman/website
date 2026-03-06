@@ -3,32 +3,6 @@
   lang="en">
 
 <head>
-  <script id="route-content">
-(function () {
-  var path = (window.location.pathname.replace(/\/+$/, "") || "/").toLowerCase();
-  if (path === "/" || path === "/index" || path === "/index.html") return;
-
-  function formatSlug(slug) {
-    return slug
-      .replace(/[_-]+/g, " ")
-      .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-  }
-
-  var content = "";
-  var categoryMatch = path.match(/^\/category\/([^/.]+)(?:\.html)?$/);
-  if (categoryMatch) {
-    content = formatSlug(categoryMatch[1]) + " Category Content";
-  } else {
-    var pageMatch = path.match(/^\/([^/.]+)(?:\.html)?$/);
-    if (pageMatch) content = formatSlug(pageMatch[1]) + " Page Content";
-  }
-
-  if (!content) return;
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.innerHTML = content;
-  });
-})();
-</script>
   <meta charset="utf-8" />
   <title>AL AMAN</title>
   <meta content="AL AMAN" property="og:title" />

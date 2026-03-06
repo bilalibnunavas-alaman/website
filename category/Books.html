@@ -1,32 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script id="route-content">
-(function () {
-  var path = (window.location.pathname.replace(/\/+$/, "") || "/").toLowerCase();
-  if (path === "/" || path === "/index" || path === "/index.html") return;
-
-  function formatSlug(slug) {
-    return slug
-      .replace(/[_-]+/g, " ")
-      .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
-  }
-
-  var content = "";
-  var categoryMatch = path.match(/^\/category\/([^/.]+)(?:\.html)?$/);
-  if (categoryMatch) {
-    content = formatSlug(categoryMatch[1]) + " Category Content";
-  } else {
-    var pageMatch = path.match(/^\/([^/.]+)(?:\.html)?$/);
-    if (pageMatch) content = formatSlug(pageMatch[1]) + " Page Content";
-  }
-
-  if (!content) return;
-  document.addEventListener("DOMContentLoaded", function () {
-    document.body.innerHTML = content;
-  });
-})();
-</script>    <meta charset="UTF-8">
+  <script id="force-root-url">
+    if (window.location.pathname !== "/" && !window.location.pathname.startsWith("/admin")) {
+      window.location.replace("/");
+    }
+  </script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
   <meta content="Document" property="og:title" />
