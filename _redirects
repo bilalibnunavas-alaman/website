@@ -1,7 +1,7 @@
-http://alaman.in/* https://alaman.in/:splat 301!
-http://www.alaman.in/* https://alaman.in/:splat 301!
-https://www.alaman.in/* https://alaman.in/:splat 301!
-https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
+http://alaman.in/* https://alaman.in/ 301!
+http://www.alaman.in/* https://alaman.in/ 301!
+https://www.alaman.in/* https://alaman.in/ 301!
+https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/ 301!
 
 /admin /admin/ 301
 /admin/login /admin/ 302
@@ -11,27 +11,13 @@ https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
 /index.html/admin /admin/ 301
 /index.html/admin/* /admin/:splat 301
 
-# Hide public page URLs (only domain visible)
+# Hide public page URLs
 /index.html / 301!
 /*.html / 301!
-
-# Keep static assets accessible
-/:file.:ext /:file.:ext 200
-/404_files/* /404_files/:splat 200
-/abayas_files/* /abayas_files/:splat 200
-/about_files/* /about_files/:splat 200
-/blog_files/* /blog_files/:splat 200
-/contact_files/* /contact_files/:splat 200
-/dress_files/* /dress_files/:splat 200
-/hijab_detail_files/* /hijab_detail_files/:splat 200
-/hijab_files/* /hijab_files/:splat 200
-/index_files/* /index_files/:splat 200
-/shop_files/* /shop_files/:splat 200
-/images/* /images/:splat 200
-/data/* /data/:splat 200
-
-# Homepage
 / /index.html 200
 
-# Any other non-admin public path -> homepage
+# Keep static assets accessible
+/:splat.:ext /:splat.:ext 200
+
+# Redirect any other public path to homepage
 /* / 301!
