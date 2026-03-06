@@ -562,7 +562,7 @@
       const tagHtml = p.tag ? '<div class="product-tag">' + p.tag + '</div>' : '';
       const categoryHtml = p.category ? '<div class="product-category">' + p.category + '</div>' : '';
       const priceHtml = '<div class="product-price-block"><div class="product-price"><div class="product-original-price">' + displayPrice + '</div></div></div>';
-      const detailsUrl = productId ? 'product_detail.html?id=' + productId : '#';
+      const detailsUrl = productId ? '/product_detail/?id=' + productId : '#';
 
       return [
         '<div role="listitem" class="product-item">',

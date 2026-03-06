@@ -17,3 +17,4 @@ https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
 # Legacy/fallback cleanups
 /trending-collection/:page/ /category/:page/ 301
 /trending-collection/:page.html /category/:page/ 301
+/product_detail.html /product_detail/ 301!
