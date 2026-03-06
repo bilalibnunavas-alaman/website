@@ -1,7 +1,7 @@
-http://alaman.in/* https://alaman.in/ 301!
-http://www.alaman.in/* https://alaman.in/ 301!
-https://www.alaman.in/* https://alaman.in/ 301!
-https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/ 301!
+http://alaman.in/* https://alaman.in/:splat 301!
+http://www.alaman.in/* https://alaman.in/:splat 301!
+https://www.alaman.in/* https://alaman.in/:splat 301!
+https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
 /admin /admin/ 301
 /admin/login /admin/ 302
 /admin/config.yml /admin/config.yml 200
@@ -9,7 +9,3 @@ https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/ 301!
 /admin/* /admin/index.html 200
 /index.html/admin /admin/ 301
 /index.html/admin/* /admin/:splat 301
-
-# Hide all public URLs: always redirect to homepage
-/ /index.html 200
-/* / 301!
