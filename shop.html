@@ -534,9 +534,7 @@
       if (document.getElementById('cmsProductCardStyles')) return;
       const style = document.createElement('style');
       style.id = 'cmsProductCardStyles';
-      style.textContent = [
-        '.shop-tabs.w-tabs .shop-tabs-menu.w-tab-menu { display: none !important; }',
-        '.product-post { overflow: visible; }',
+      style.textContent = [        '.product-post { overflow: visible; }',
         '.product-content-block { position: static; inset: auto; }',
         '.product-card { opacity: 1; display: flex; position: static; bottom: auto; right: auto; max-width: none; padding: 0; border-radius: 0; background: transparent; grid-column-gap: 10px; grid-row-gap: 10px; }',
         '.product-price-block { margin-top: 4px; }'
@@ -610,17 +608,48 @@
     };
 
     const renderTabs = (products) => {
-      const tabsRoot = document.querySelector('.shop-tabs.w-tabs');
-      const tabMenu = tabsRoot?.querySelector('.shop-tabs-menu.w-tab-menu');
+      const tabLinks = Array.from(document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-link'));
       const tabPanes = Array.from(document.querySelectorAll('.shop-tabs.w-tabs .shop-tab-pane'));
+      if (!tabLinks.length || !tabPanes.length) {
+        renderIntoList(document.getElementById('productList'), products);
+        return;
+      }
 
-      if (tabMenu) tabMenu.style.display = 'none';
-      tabPanes.forEach((pane, index) => {
-        pane.style.display = index === 0 ? '' : 'none';
+      const groupsMap = new Map();
+      products.forEach((p) => {
+        const key = getGroupValue(p);
+        if (!key) return;
+        if (!groupsMap.has(key)) groupsMap.set(key, []);
+        groupsMap.get(key).push(p);
       });
 
-      const allList = tabPanes[0]?.querySelector('.product-list') || document.getElementById('productList');
-      renderIntoList(allList, products);
+      const groups = Array.from(groupsMap.entries()).slice(0, 5);
+
+      // Tab 1: All
+      const tab1Label = tabLinks[0]?.querySelector('div');
+      if (tab1Label) tab1Label.textContent = 'All';
+      renderIntoList(tabPanes[0]?.querySelector('.product-list'), products);
+
+      // Tabs 2-6: Dynamic groups from sub_category/type/style/category
+      for (let i = 1; i < 6; i++) {
+        const link = tabLinks[i];
+        const pane = tabPanes[i];
+        if (!link || !pane) continue;
+
+        const group = groups[i - 1];
+        if (!group) {
+          link.style.display = 'none';
+          pane.style.display = 'none';
+          continue;
+        }
+
+        const [groupKey, items] = group;
+        link.style.display = '';
+        pane.style.display = '';
+        const label = link.querySelector('div');
+        if (label) label.textContent = toLabel(groupKey);
+        renderIntoList(pane.querySelector('.product-list'), items);
+      }
     };
 
     ensureCardStyles();
