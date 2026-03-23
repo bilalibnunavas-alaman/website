@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AL AMAN – Contact Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8d5b0;
+      --dark: #1a1a1a;
+      --card-bg: #fff;
+      --item-bg: #faf8f4;
+      --border: rgba(180,140,80,0.18);
+      --radius-card: 28px;
+      --radius-item: 16px;
+      --radius-icon: 13px;
+    }
+
+    html, body {
+      min-height: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: #f2ece0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px 12px 40px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card-bg);
+      border: 1.5px solid rgba(180,140,80,0.22);
+      border-radius: var(--radius-card);
+      width: 100%;
+      max-width: 560px;
+      overflow: hidden;
+      box-shadow: 0 10px 50px rgba(180,140,80,0.14);
+    }
+
+    /* ── Header ── */
+    .card-header {
+      background: var(--dark);
+      padding: 32px 24px 26px;
+      text-align: center;
+      position: relative;
+    }
+    .card-header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .logo-circle {
+      width: 82px; height: 82px;
+      border-radius: 50%;
+      border: 2.5px solid rgba(201,169,110,0.55);
+      margin: 0 auto 14px;
+      display: flex; align-items: center; justify-content: center;
+      background: #222;
+      overflow: hidden;
+    }
+    .logo-circle img {
+      width: 80%; height: 80%;
+      object-fit: contain;
+    }
+
+    .store-name {
+      font-family: 'El Messiri', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.18em;
+    }
+    .store-tagline {
+      font-size: 12px;
+      color: rgba(255,255,255,0.42);
+      letter-spacing: 0.06em;
+      margin-top: 5px;
+      font-weight: 300;
+    }
+
+    /* ── Grid ── */
+    .links-grid {
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* ── Every link item is EQUAL HEIGHT box ── */
+    .link-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--item-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-item);
+      padding: 18px 12px 16px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, transform 0.18s, box-shadow 0.2s;
+      min-height: 110px;
+      text-align: center;
+    }
+    .link-item:hover, .link-item:active {
+      background: #fff8ec;
+      border-color: rgba(201,169,110,0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 18px rgba(180,140,80,0.16);
+    }
+
+    /* full-width spans both columns */
+    .link-item.full {
+      grid-column: 1 / -1;
+      flex-direction: row;
+      justify-content: flex-start;
+      min-height: 76px;
+      padding: 16px 18px;
+      text-align: left;
+      gap: 14px;
+    }
+
+    /* ── Icon wrap ── */
+    .icon-wrap {
+      width: 50px; height: 50px;
+      border-radius: var(--radius-icon);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .link-item.full .icon-wrap {
+      width: 46px; height: 46px;
+    }
+    .icon-wrap svg {
+      width: 24px; height: 24px;
+    }
+
+    /* ── Text ── */
+    .link-text { min-width: 0; }
+    .link-item:not(.full) .link-text { text-align: center; }
+
+    .link-label {
+      font-size: 10px;
+      color: #a08050;
+      letter-spacing: 0.09em;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .link-value {
+      font-family: 'El Messiri', serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-top: 4px;
+      line-height: 1.3;
+      word-break: break-word;
+    }
+    .link-item.full .link-value {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 15px;
+    }
+
+    /* spacer pushes arrow to the right in full rows */
+    .link-item.full .link-text { flex: 1; }
+
+    /* ── Arrow ── */
+    .arrow-icon {
+      width: 13px; height: 13px;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    /* ── Icon colours ── */
+    .wa  { background: #e5f9ee; } .wa  svg { fill: #25d366; }
+    .ig  { background: #fde8f0; } .ig  svg { fill: #e1306c; }
+    .fb  { background: #e8f0fd; } .fb  svg { fill: #1877f2; }
+    .web { background: #fdf5e8; }
+    .ph  { background: #e8f5fd; }
+    .loc { background: #fde8e8; }
+    .gr  { background: #eaf4ec; }
+
+    /* ── Mobile fine-tuning ── */
+    @media (max-width: 400px) {
+      .card-header { padding: 26px 16px 20px; }
+      .logo-circle { width: 70px; height: 70px; }
+      .store-name  { font-size: 22px; }
+      .links-grid  { padding: 13px; gap: 10px; }
+      .link-item   { min-height: 100px; padding: 14px 10px 12px; }
+      .link-item.full { min-height: 68px; padding: 13px 14px; }
+      .icon-wrap   { width: 44px; height: 44px; }
+      .icon-wrap svg { width: 21px; height: 21px; }
+      .link-value  { font-size: 13px; }
+      .link-item.full .link-value { font-size: 13px; }
+    }
+
+    @media (max-width: 320px) {
+      .links-grid { grid-template-columns: 1fr; }
+      .link-item.full { grid-column: 1; }
+      .link-item { flex-direction: row; text-align: left; min-height: auto; padding: 14px; }
+      .link-item:not(.full) .link-text { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="card-header">
+      <div class="logo-circle">
+        <img src="https://alaman.in/index_files/logo.png" alt="AL AMAN"
+          onerror="this.outerHTML='<span style=\'font-family:El Messiri,serif;color:#c9a96e;font-size:22px;font-weight:700;\'>AA</span>'" />
+      </div>
+      <div class="store-name">AL AMAN</div>
+      <div class="store-tagline">No. 1 Islamic Store · Alappuzha, Kerala</div>
+    </div>
+
+    <div class="links-grid">
+
+      <!-- WhatsApp — full row -->
+      <a class="link-item full" href="https://wa.me/918089041379?text=Hey%20I%20am%20interested%20in%20your%20product" target="_blank">
+        <div class="icon-wrap wa">
+          <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.43 0 .07 5.36.07 11.97c0 2.11.55 4.17 1.6 5.99L0 24l6.17-1.62a11.93 11.93 0 0 0 5.86 1.5h.01c6.61 0 11.97-5.36 11.97-11.97a11.9 11.9 0 0 0-3.49-8.43zM12.04 21.9a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.66.96.98-3.57-.23-.36a9.93 9.93 0 1 1 8.32 4.56zm5.44-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.89-.79-1.49-1.77-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">WhatsApp</div>
+          <div class="link-value">+91 80890 41379</div>
+        </div>
+        <svg class="arrow-icon" viewBox="0 0 12 12" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"><path d="M2 10L10 2M10 2H4M10 2V8"/></svg>
+      </a>
+
+      <!-- Website — full row -->
+      <a class="link-item full" href="https://alaman.in" target="_blank">
+        <div class="icon-wrap web">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Website</div>
+          <div class="link-value">alaman.in</div>
+        </div>
+        <svg class="arrow-icon" viewBox="0 0 12 12" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"><path d="M2 10L10 2M10 2H4M10 2V8"/></svg>
+      </a>
+
+      <!-- Google Review — full row -->
+      <a class="link-item full" href="https://www.google.com/search?q=Al+Aman+Islamic+Store#lrd=0x3b089b9aad3c3715:0xbf3e0ce558c27947,3,,,," target="_blank">
+        <div class="icon-wrap gr">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Google Review</div>
+          <div class="link-value">Rate Us on Google ⭐</div>
+        </div>
+        <svg class="arrow-icon" viewBox="0 0 12 12" fill="none" stroke="#c9a96e" stroke-width="2" stroke-linecap="round"><path d="M2 10L10 2M10 2H4M10 2V8"/></svg>
+      </a>
+
+      <!-- Instagram — half box -->
+      <a class="link-item" href="https://www.instagram.com/alaman_souqalhind?igsh=cnRwamc0ano5a3R2" target="_blank">
+        <div class="icon-wrap ig">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Instagram</div>
+          <div class="link-value">@alaman_souqalhind</div>
+        </div>
+      </a>
+
+      <!-- Facebook — half box -->
+      <a class="link-item" href="https://www.facebook.com/alaman" target="_blank">
+        <div class="icon-wrap fb">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Facebook</div>
+          <div class="link-value">Al Aman</div>
+        </div>
+      </a>
+
+      <!-- Call — half box -->
+      <a class="link-item" href="tel:+919072800131">
+        <div class="icon-wrap ph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1890c8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Call Us</div>
+          <div class="link-value">+91 98952 49545</div>
+        </div>
+      </a>
+
+      <!-- Location — half box -->
+      <a class="link-item" href="https://maps.app.goo.gl/cLWi9mCMSe67BcMD6" target="_blank">
+        <div class="icon-wrap loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e03030" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="link-text">
+          <div class="link-label">Location</div>
+          <div class="link-value">Valanjavazhy, Alappuzha</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
