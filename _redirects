@@ -24,6 +24,8 @@ https://gorgeous-platypus-fd8e42.netlify.app/* https://alaman.in/:splat 301!
 
 # Clean URLs
 /index.html / 301!
+/milad_souk.html /milad_souq 301!
+/milad_souk /milad_souq 301!
 /category/:page.html /category/:page 301!
 /:page.html /:page 301!
 / /index.html 200
