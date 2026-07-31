@@ -14,6 +14,54 @@
       background: #f5f2eb;
     }
 
+    .floating-action-button {
+      position: fixed;
+      right: 30px;
+      bottom: 100px;
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #25d366;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .floating-action-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .floating-action-button svg {
+      width: 24px;
+      height: 24px;
+      flex: 0 0 24px;
+    }
+
+    .floating-action-button .tooltip {
+      position: absolute;
+      right: 65px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #000;
+      color: #fff;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .floating-action-button:hover .tooltip {
+      opacity: 1;
+    }
+
     .milad-page {
       min-height: 100vh;
       padding-top: 96px;
